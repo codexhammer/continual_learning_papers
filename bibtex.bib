@@ -351,22 +351,10 @@ url={http://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-
 }
 
 @article{Rajasegaran2019Random,
-  author   ={Jathushan Rajasegaran and
-               Munawar Hayat and
-               Salman H. Khan and
-               Fahad Shahbaz Khan and
-               Ling Shao},
-  title    ={Random Path Selection for Incremental Learning},
-  journal  ={CoRR},
-  volume   ={abs/1906.01120},
-  year     ={2019},
-  url      ={http://arxiv.org/abs/1906.01120},
-  archivePrefix={arXiv},
-  eprint   ={1906.01120},
-  timestamp={Fri, 06 Dec 2019 16:34:40 +0100},
-  biburl   ={https://dblp.org/rec/journals/corr/abs-1906-01120.bib},
-  bibsource={dblp computer science bibliography, https://dblp.org},
-    keywords={Dynamic Architecture}
+  title={Random path selection for incremental learning},
+  author={Rajasegaran, Jathushan and Hayat, Munawar and Khan, Salman and Khan, Fahad Shahbaz and Shao, Ling},
+  journal={Advances in Neural Information Processing Systems},
+  year={2019}
 }
 @String(Rajasegaran2019Random="Proposes a random path selection algorithm, called RPSnet, that progressively chooses optimal paths for the new tasks while encouraging parameter sharing and reuse")
 
@@ -911,6 +899,25 @@ url={https://openreview.net/forum?id=SJ1Xmf-Rb},
     keywords={}
 }
 
+@inproceedings{liu2020generative,
+  title={Generative feature replay for class-incremental learning},
+  author={Liu, Xialei and Wu, Chenshen and Menta, Mikel and Herranz, Luis and Raducanu, Bogdan and Bagdanov, Andrew D and Jui, Shangling and de Weijer, Joost van},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={226--227},
+  year={2020}
+}
+
+@article{van2020brain,
+  title={Brain-inspired replay for continual learning with artificial neural networks},
+  author={van de Ven, Gido M and Siegelmann, Hava T and Tolias, Andreas S},
+  journal={Nature communications},
+  volume={11},
+  number={1},
+  pages={1--14},
+  year={2020},
+  publisher={Nature Publishing Group}
+}
+
 @inproceedings{gepperth2016incremental,
   TITLE={Incremental learning algorithms and applications},
   AUTHOR={Gepperth, Alexander and Hammer, Barbara},
@@ -1185,13 +1192,13 @@ archivePrefix="arXiv",
 @String(spigler2019meta="Learning MAML in a Meta continual learning way slows down forgetting")
 
 
-@article{riemer2018learning,
-  title={Learning to learn without forgetting by maximizing transfer and minimizing interference},
-  author={Riemer, Matthew and Cases, Ignacio and Ajemian, Robert and Liu, Miao and Rish, Irina and Tu, Yuhai and Tesauro, Gerald},
-  journal={arXiv preprint arXiv:1810.11910},
-  year={2018},
-    keywords={Meta-Continual Learning},
-    url={https://arxiv.org/abs/1810.11910}
+@inproceedings{riemer2018learning,
+title={Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference},
+author={Matthew Riemer and Ignacio Cases and Robert Ajemian and Miao Liu and Irina Rish and Yuhai Tu and and Gerald Tesauro},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=B1gTShAct7},
+keywords={Meta-Continual Learning}
 }
 
 @inproceedings{rolnick2019experience,
@@ -1906,6 +1913,14 @@ keywords={}
   keywords={Thesis}
 }
 
+@misc{pellegrini2020latent,
+      title={Latent Replay for Real-Time Continual Learning}, 
+      author={Lorenzo Pellegrini and Gabriele Graffieti and Vincenzo Lomonaco and Davide Maltoni},
+      year={2020},
+      eprint={1912.01100},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 
 @inproceedings{kim2018keep,
   title={Keep and learn: Continual learning by constraining the latent space for knowledge preservation in neural networks},
@@ -2205,6 +2220,24 @@ url={https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123560375.pdf},
   year={2020},
 url={https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580409.pdf},
 keywords={Rehearsal}
+}
+
+@inproceedings{isele2018selective,
+  title={Selective experience replay for lifelong learning},
+  author={Isele, David and Cosgun, Akansel},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={32},
+  number={1},
+  year={2018}
+}
+
+@inproceedings{chrysakis2020online,
+  title={Online continual learning from imbalanced data},
+  author={Chrysakis, Aristotelis and Moens, Marie-Francine},
+  booktitle={International Conference on Machine Learning},
+  pages={1952--1961},
+  year={2020},
+  organization={PMLR}
 }
 
 @article{fini2020online,
@@ -2712,4 +2745,238 @@ archivePrefix = {arXiv},
       keywords={Library, Framework},
 }
 @String(nekoei2021continuous="a multi-agent lifelong learning testbed that supports both zero-shot and few-shot settings.")
+
+@article{nguyen2019toward,
+  title={Toward understanding catastrophic forgetting in continual learning},
+  author={Nguyen, Cuong V and Achille, Alessandro and Lam, Michael and Hassner, Tal and Mahadevan, Vijay and Soatto, Stefano},
+  journal={arXiv preprint arXiv:1908.01091},
+  year={2019}
+}
+
+@inproceedings{lee2021continual,
+  title={Continual Learning in the Teacher-Student Setup: Impact of Task Similarity},
+  author={Lee, Sebastian and Goldt, Sebastian and Saxe, Andrew},
+  booktitle={International Conference on Machine Learning},
+  pages={6109--6119},
+  year={2021},
+  organization={PMLR}
+}
+
+@article{von2021learning,
+  title={Learning where to learn: Gradient sparsity in meta and continual learning},
+  author={Von Oswald, Johannes and Zhao, Dominic and Kobayashi, Seijin and Schug, Simon and Caccia, Massimo and Zucchet, Nicolas and Sacramento, Jo{\~a}o},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/2a10665525774fa2501c2c8c4985ce61-Abstract.html}
+}
+
+@article{yin2021mitigating,
+  title={Mitigating Forgetting in Online Continual Learning with Neuron Calibration},
+  author={Yin, Haiyan and Li, Ping and others},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/54ee290e80589a2a1225c338a71839f5-Abstract.html}
+}
+
+
+@article{mcleod2021continual,
+  title={Continual auxiliary task learning},
+  author={McLeod, Matthew and Lo, Chunlok and Schlegel, Matthew and Jacobsen, Andrew and Kumaraswamy, Raksha and White, Martha and White, Adam},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/68331ff0427b551b68e911eebe35233b-Abstract.html}
+}
+
+@article{henning2021posterior,
+  title={Posterior meta-replay for continual learning},
+  author={Henning, Christian and Cervera, Maria and D'Angelo, Francesco and Von Oswald, Johannes and Traber, Regina and Ehret, Benjamin and Kobayashi, Seijin and Grewe, Benjamin F and Sacramento, Jo{\~a}o},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/761b42cfff120aac30045f7a110d0256-Abstract.html}
+}
+
+@article{hurtado2021optimizing,
+  title={Optimizing Reusable Knowledge for Continual Learning via Metalearning},
+  author={Hurtado, Julio and Raymond-Saez, Alain and Soto, Alvaro},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/761e6675f9e54673cc778e7fdb2823d2-Abstract.html}
+}
+
+@inproceedings{varshney2021cam,
+  title={CAM-GAN: Continual Adaptation Modules for Generative Adversarial Networks},
+  author={Varshney, Sakshi and Verma, Vinay Kumar and Srijith, PK and Carin, Lawrence and Rai, Piyush},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/8073bd4ed0fe0c330290c58056a2cd5e-Abstract.html}
+}
+
+@inproceedings{pham2021dualnet,
+  title={DualNet: Continual Learning, Fast and Slow},
+  author={Pham, Quang and Liu, Chenghao and others},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/86a1fa88adb5c33bd7a68ac2f9f3f96b-Abstract.html}
+}
+
+@article{raghavan2021formalizing,
+  title={Formalizing the Generalization-Forgetting Trade-off in Continual Learning},
+  author={Raghavan, Krishnan and Balaprakash, Prasanna},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/901797aebf0b23ecbab534d61ad33bb1-Abstract.html}
+}
+
+@inproceedings{egorov2021boovae,
+  title={BooVAE: Boosting Approach for Continual Learning of VAE},
+  author={Egorov, Evgenii and Kuzina, Anna and Burnaev, Evgeny},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/952285b9b7e7a1be5aa7849f32ffff05-Abstract.html}
+}
+
+@article{deng2021flattening,
+  title={Flattening Sharpness for Dynamic Gradient Projection Memory Benefits Continual Learning},
+  author={Deng, Danruo and Chen, Guangyong and Hao, Jianye and Wang, Qiong and Heng, Pheng-Ann},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/9b16759a62899465ab21e2e79d2ef75c-Abstract.html}
+}
+
+@article{qin2021bns,
+  title={BNS: Building Network Structures Dynamically for Continual Learning},
+  author={Qin, Qi and Hu, Wenpeng and Peng, Han and Zhao, Dongyan and Liu, Bing},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/ac64504cc249b070772848642cffe6ff-Abstract.html}
+}
+
+@article{banayeeanzade2021generative,
+  title={Generative vs. Discriminative: Rethinking The Meta-Continual Learning},
+  author={Banayeeanzade, Mohammadamin and Mirzaiezadeh, Rasoul and Hasani, Hosein and Soleymani, Mahdieh},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/b4e267d84075f66ebd967d95331fcc03-Abstract.html}
+}
+
+@inproceedings{wang2021afec,
+  title={AFEC: Active Forgetting of Negative Transfer in Continual Learning},
+  author={Wang, Liyuan and Zhang, Mingtian and Jia, Zhongfan and Li, Qian and Bao, Chenglong and Ma, Kaisheng and Zhu, Jun and Zhong, Yi},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/bc6dc48b743dc5d013b1abaebd2faed2-Abstract.html}
+}
+
+@article{ke2021achieving,
+  title={Achieving Forgetting Prevention and Knowledge Transfer in Continual Learning},
+  author={Ke, Zixuan and Liu, Bing and Ma, Nianzu and Xu, Hu and Shu, Lei},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/bcd0049c35799cdf57d06eaf2eb3cff6-Abstract.html}
+}
+
+
+@article{zhang2021variational,
+  title={Variational Continual Bayesian Meta-Learning},
+  author={Zhang, Qiang and Fang, Jinyuan and Meng, Zaiqiao and Liang, Shangsong and Yilmaz, Emine},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/cdd0500dc0ef6682fa6ec6d2e6b577c4-Abstract.html}
+}
+
+
+@inproceedings{kao2021natural,
+  title={Natural continual learning: success is a journey, not (just) a destination},
+  author={Kao, Ta-Chu and Jensen, Kristopher T and van de Ven, Gido Martijn and Bernacchia, Alberto and Hennequin, Guillaume},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/ec5aa0b7846082a2415f0902f0da88f2-Abstract.html}
+}
+
+@article{wolczyk2021continual,
+  title={Continual World: A Robotic Benchmark For Continual Reinforcement Learning},
+  author={Wo{\l}czyk, Maciej and Zaj{\k{a}}c, Micha{\l} and Pascanu, Razvan and Kuci{\'n}ski, {\L}ukasz and Mi{\l}o{\'s}, Piotr},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/ef8446f35513a8d6aa2308357a268a7e-Abstract.html}
+}
+
+@inproceedings{jin2021gradient,
+  title={Gradient-based Editing of Memory Examples for Online Task-free Continual Learning},
+  author={Jin, Xisen and Sadhu, Arka and Du, Junyi and Ren, Xiang},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/f45a1078feb35de77d26b3f7a52ef502-Abstract.html}
+}
+
+
+@inproceedings{ostapenko2021continual,
+  title={Continual Learning via Local Module Composition},
+  author={Ostapenko, Oleksiy and Rodriguez, Pau and Caccia, Massimo and Charlin, Laurent},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}
+}
+
+@inproceedings{rostami2021lifelong,
+  title={Lifelong Domain Adaptation via Consolidated Internal Distribution},
+  author={Rostami, Mohammad},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/5caf41d62364d5b41a893adc1a9dd5d4-Abstract.html}
+}
+
+@article{shi2021overcoming,
+  title={Overcoming Catastrophic Forgetting in Incremental Few-Shot Learning by Finding Flat Minima},
+  author={Shi, Guangyuan and Chen, Jiaxin and Zhang, Wenlong and Zhan, Li-Ming and Wu, Xiao-Ming},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/357cfba15668cc2e1e73111e09d54383-Abstract.html}
+}
+
+@article{liu2021rmm,
+  title={RMM: Reinforced Memory Management for Class-Incremental Learning},
+  author={Liu, Yaoyao and Schiele, Bernt and Sun, Qianru},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/1cbcaa5abbb6b70f378a3a03d0c26386-Abstract.html}
+}
+
+@article{kim2021ssul,
+  title={SSUL: Semantic Segmentation with Unknown Label for Exemplar-based Class-Incremental Learning},
+  author={Kim, Sungmin Cha and Yoo, Youngjoon and Moon, Taesup and others},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/5a9542c773018268fc6271f7afeea969-Abstract.html}
+}
+
+@inproceedings{zhu2021class,
+  title={Class-Incremental Learning via Dual Augmentation},
+  author={Zhu, Fei and Cheng, Zhen and Zhang, Xu-yao and Liu, Cheng-lin},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/77ee3bc58ce560b86c2b59363281e914-Abstract.html}
+}
+
+@article{dong2021bridging,
+  title={Bridging Non Co-occurrence with Unlabeled In-the-wild Data for Incremental Object Detection},
+  author={Dong, Na and Zhang, Yongqiang and Ding, Mingli and Lee, Gim Hee},
+  journal={Advances in Neural Information Processing Systems},
+  volume={34},
+  year={2021},
+  url={https://proceedings.neurips.cc/paper/2021/hash/ffc58105bf6f8a91aba0fa2d99e6f106-Abstract.html}
+}
+
+
 
