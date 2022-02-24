@@ -11,6 +11,8 @@ This repository is maintained by Massimo Caccia and Timothée Lesort don't hesit
 - [Surveys](https://github.com/optimass/continual_learning_papers/blob/master/README.md#surveys)
 - [Influentials](https://github.com/optimass/continual_learning_papers/blob/master/README.md#influentials)
 - [New Settings or Metrics](https://github.com/optimass/continual_learning_papers/blob/master/README.md#new-settings-or-metrics)
+- [General Continual Learning Methods](https://github.com/optimass/continual_learning_papers/blob/master/README.md#general-continual-learning-methods)
+- [Task-Agnostic Continual Learning](https://github.com/optimass/continual_learning_papers/blob/master/README.md#task-agnostic-continual-learning)
 - [Regularization Methods](https://github.com/optimass/continual_learning_papers/blob/master/README.md#regularization-methods)
 - [Distillation Methods](https://github.com/optimass/continual_learning_papers/blob/master/README.md#distillation-methods)
 - [Rehearsal Methods](https://github.com/optimass/continual_learning_papers/blob/master/README.md#rehearsal-methods)
@@ -20,203 +22,232 @@ This repository is maintained by Massimo Caccia and Timothée Lesort don't hesit
 - [Continual Few-Shot Learning](https://github.com/optimass/continual_learning_papers/blob/master/README.md#continual-few-shot-learning)
 - [Meta-Continual Learning](https://github.com/optimass/continual_learning_papers/blob/master/README.md#meta-continual-learning)
 - [Lifelong Reinforcement Learning](https://github.com/optimass/continual_learning_papers/blob/master/README.md#lifelong-reinforcement-learning)
+- [Task-Agnostic Lifelong Reinforcement Learning](https://github.com/optimass/continual_learning_papers/blob/master/README.md#task-agnostic-lifelong-reinforcement-learning)
 - [Continual Generative Modeling](https://github.com/optimass/continual_learning_papers/blob/master/README.md#continual-generative-modeling)
+- [Miscellaneous](https://github.com/optimass/continual_learning_papers/blob/master/README.md#miscellaneous)
 - [Applications](https://github.com/optimass/continual_learning_papers/blob/master/README.md#applications)
 - [Thesis](https://github.com/optimass/continual_learning_papers/blob/master/README.md#thesis)
 - [Libraries](https://github.com/optimass/continual_learning_papers/blob/master/README.md#libraries)
 - [Workshops](https://github.com/optimass/continual_learning_papers/blob/master/README.md#workshops)
 
 ## Classics
-- [**Catastrophic forgetting in connectionist networks**](https://www.sciencedirect.com/science/article/abs/pii/S1364661399012942) , (1999) by *French, Robert M.* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1078-L1092) 
-- [**Lifelong robot learning**](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.3723&rep=rep1&type=pdf) , (1995) by *Thrun, Sebastian and Mitchell, Tom M* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L167-L176) 
+- [**Catastrophic forgetting in connectionist networks**](https://www.sciencedirect.com/science/article/abs/pii/S1364661399012942) , (1999) by *French, Robert M.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1166-L1180) 
+- [**Lifelong robot learning**](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.3723&rep=rep1&type=pdf) , (1995) by *Thrun, Sebastian and Mitchell, Tom M* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L254-L263) 
 ``` Argues knowledge transfer is essential if robots are to learn control with moderate learning times ``` 
-- [**Catastrophic Forgetting, Rehearsal and Pseudorehearsal**](https://doi.org/10.1080/09540099550039318) , (1995) by * Anthony   Robins * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1822-L1835) 
-- [**Catastrophic interference in connectionist networks: The sequential learning problem**](https://www.sciencedirect.com/science/article/pii/S0079742108605368) , (1989) by *McCloskey, Michael and Cohen, Neal J* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L758-L768) 
+- [**Catastrophic Forgetting, Rehearsal and Pseudorehearsal**](https://doi.org/10.1080/09540099550039318) , (1995) by * Anthony   Robins * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1900-L1913) 
+- [**Catastrophic interference in connectionist networks: The sequential learning problem**](https://www.sciencedirect.com/science/article/pii/S0079742108605368) , (1989) by *McCloskey, Michael and Cohen, Neal J* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L846-L856) 
 ``` Introduces CL and reveals the catastrophic forgetting problem ``` 
 
 ## Empirical Study
-- [**Rethinking Experience Replay: a Bag of Tricks for Continual Learning**](https://ieeexplore.ieee.org/abstract/document/9412614) , (2021) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo and Calderara, Simone* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1-L12) 
-- [**A comprehensive study of class incremental learning algorithms for visual tasks**](https://www.sciencedirect.com/science/article/pii/S0893608020304202) , (2021) by *Eden Belouadah, Adrian Popescu and Ioannis Kanellos* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2561-L2573) 
-- **Online Continual Learning in Image Classification: An Empirical Survey**, (2021) by *Zheda Mai, Ruiwen Li, Jihwan Jeong, David Quispe, Hyunwoo Kim and Scott Sanner* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2575-L2583) 
-- **GDumb: A simple approach that questions our progress in continual learning**, (2020) by *Prabhu, Ameya, Torr, Philip HS and Dokania, Puneet K* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L26-L34) 
+- [**Rethinking Experience Replay: a Bag of Tricks for Continual Learning**](https://ieeexplore.ieee.org/abstract/document/9412614) , (2021) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo and Calderara, Simone* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L88-L99) 
+- [**A comprehensive study of class incremental learning algorithms for visual tasks**](https://www.sciencedirect.com/science/article/pii/S0893608020304202) , (2021) by *Eden Belouadah, Adrian Popescu and Ioannis Kanellos* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2640-L2652) 
+- **Online Continual Learning in Image Classification: An Empirical Survey**, (2021) by *Zheda Mai, Ruiwen Li, Jihwan Jeong, David Quispe, Hyunwoo Kim and Scott Sanner* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2654-L2662) 
+- **GDumb: A simple approach that questions our progress in continual learning**, (2020) by *Prabhu, Ameya, Torr, Philip HS and Dokania, Puneet K* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L113-L121) 
 ``` introduces a super simple methods that outperforms almost all methods in all of the CL benchmarks. We need new better benchamrks ``` 
-- [**Continual learning: A comparative study on how to defy forgetting in classification tasks**](https://arxiv.org/abs/1909.08383) , (2019) by *Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Ales Leonardis, Gregory Slabaugh and Tinne Tuytelaars* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L252-L261) 
+- [**Continual learning: A comparative study on how to defy forgetting in classification tasks**](https://arxiv.org/abs/1909.08383) , (2019) by *Matthias De Lange, Rahaf Aljundi, Marc Masana, Sarah Parisot, Xu Jia, Ales Leonardis, Gregory Slabaugh and Tinne Tuytelaars* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L339-L348) 
 ``` Extensive empirical study of CL methods (in the multi-head setting) ``` 
-- [**Three scenarios for continual learning**](https://arxiv.org/abs/1904.07734) , (2019) by *van de Ven, Gido M and Tolias, Andreas S* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L790-L797) 
+- [**Three scenarios for continual learning**](https://arxiv.org/abs/1904.07734) , (2019) by *van de Ven, Gido M and Tolias, Andreas S* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L878-L885) 
 ``` An extensive review of CL methods in three different scenarios (task-, domain-, and class-incremental learning) ``` 
-- **Continuous learning in single-incremental-task scenarios**, (2019) by *Maltoni, Davide and Lomonaco, Vincenzo* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1105-L1114) 
-- [**Towards Robust Evaluations of Continual Learning**](https://arxiv.org/abs/1805.09733) , (2018) by *Farquhar, Sebastian and Gal, Yarin* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L179-L186) 
+- **Continuous learning in single-incremental-task scenarios**, (2019) by *Maltoni, Davide and Lomonaco, Vincenzo* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1193-L1202) 
+- [**Towards Robust Evaluations of Continual Learning**](https://arxiv.org/abs/1805.09733) , (2018) by *Farquhar, Sebastian and Gal, Yarin* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L266-L273) 
 ``` Proposes desideratas and reexamines the evaluation protocol ``` 
-- **Catastrophic forgetting: still a problem for DNNs**, (2018) by *Pf\"ulb, B, Gepperth, A, Abdullah, S and Krawczyk, A* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1973-L1979) 
+- **Catastrophic forgetting: still a problem for DNNs**, (2018) by *Pf\"ulb, B, Gepperth, A, Abdullah, S and Krawczyk, A* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2051-L2057) 
 - **Measuring Catastrophic Forgetting in Neural Networks**, (2017) by *Kemker, R., McClure, M., Abitino, A. and Hayes, T. and
-Kanan, C.* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1117-L1130) 
-- [**CORe50: a New Dataset and Benchmark for Continuous Object Recognition**](http://proceedings.mlr.press/v78/lomonaco17a.html) , (2017) by *Vincenzo Lomonaco and Davide Maltoni* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1132-L1147) 
-- [**An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks**](https://arxiv.org/abs/1312.6211) , (2013) by *Goodfellow, I.~J., Mirza, M., Xiao, D., Courville, A. and Bengio, Y.* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L236-L249) 
+Kanan, C.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1205-L1218) 
+- [**CORe50: a New Dataset and Benchmark for Continuous Object Recognition**](http://proceedings.mlr.press/v78/lomonaco17a.html) , (2017) by *Vincenzo Lomonaco and Davide Maltoni* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1220-L1235) 
+- [**An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks**](https://arxiv.org/abs/1312.6211) , (2013) by *Goodfellow, I.~J., Mirza, M., Xiao, D., Courville, A. and Bengio, Y.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L323-L336) 
 ``` Investigates CF in neural networks ``` 
 
 ## Surveys
-- **Towards Continual Reinforcement Learning: A Review and Perspectives**, (2020) by *Khimya Khetarpal, Matthew Riemer, Irina Rish and Doina Precup* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L37-L45) 
+- **Towards Continual Reinforcement Learning: A Review and Perspectives**, (2020) by *Khimya Khetarpal, Matthew Riemer, Irina Rish and Doina Precup* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L124-L132) 
 ``` A review on continual reinforcement learning ``` 
-- [**Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges**](http://www.sciencedirect.com/science/article/pii/S1566253519307377) , (2020) by *Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodríguez* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1064-L1075) 
-- [**A Wholistic View of Continual Learning with Deep Neural Networks: Forgotten Lessons and the Bridge to Active and Open World Learning**](https://arxiv.org/abs/2009.01797) , (2020) by *Mundt, Martin, Hong, Yong Won, Pliushch, Iuliia and Ramesh, Visvanathan* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2341-L2348) 
+- [**Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges**](http://www.sciencedirect.com/science/article/pii/S1566253519307377) , (2020) by *Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodríguez* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1152-L1163) 
+- [**A Wholistic View of Continual Learning with Deep Neural Networks: Forgotten Lessons and the Bridge to Active and Open World Learning**](https://arxiv.org/abs/2009.01797) , (2020) by *Mundt, Martin, Hong, Yong Won, Pliushch, Iuliia and Ramesh, Visvanathan* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2420-L2427) 
 ``` propose a consolidated view to bridge continual learning, active learning and open set recognition in DNNs ``` 
-- [**Continual Lifelong Learning in Natural Language Processing: A Survey**](https://www.aclweb.org/anthology/2020.coling-main.574) , (2020) by *Magdalena Biesialska, Katarzyna Biesialska, Marta R. Costa-jussà* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2526-L2538) 
+- [**Continual Lifelong Learning in Natural Language Processing: A Survey**](https://www.aclweb.org/anthology/2020.coling-main.574) , (2020) by *Magdalena Biesialska, Katarzyna Biesialska, Marta R. Costa-jussà* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2605-L2617) 
 ``` An extensive review of CL in Natural Language Processing (NLP) ``` 
-- [**Continual lifelong learning with neural networks: A review**](http://www.sciencedirect.com/science/article/pii/S0893608019300231) , (2019) by *German I. Parisi, Ronald Kemker, Jose L. Part, Christopher Kanan and Stefan Wermter* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L264-L275) 
+- [**Continual lifelong learning with neural networks: A review**](http://www.sciencedirect.com/science/article/pii/S0893608019300231) , (2019) by *German I. Parisi, Ronald Kemker, Jose L. Part, Christopher Kanan and Stefan Wermter* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L351-L362) 
 ``` An extensive review of CL ``` 
-- [**Incremental learning algorithms and applications**](https://hal.archives-ouvertes.fr/hal-01418129) , (2016) by *Gepperth, Alexander and Hammer, Barbara* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L921-L932) 
+- [**Incremental learning algorithms and applications**](https://hal.archives-ouvertes.fr/hal-01418129) , (2016) by *Gepperth, Alexander and Hammer, Barbara* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1009-L1020) 
 ``` A survey on incremental learning and the various applications fields ``` 
 
 ## Influentials
-- [**Efficient Lifelong Learning with A-GEM**](https://arxiv.org/abs/1812.00420) , (2019) by *Chaudhry, Arslan, Ranzato, Marc’Aurelio, Rohrbach, Marcus and Elhoseiny, Mohamed* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L189-L196) 
+- [**Efficient Lifelong Learning with A-GEM**](https://arxiv.org/abs/1812.00420) , (2019) by *Chaudhry, Arslan, Ranzato, Marc’Aurelio, Rohrbach, Marcus and Elhoseiny, Mohamed* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L276-L283) 
 ``` More efficient GEM; Introduces online continual learning ``` 
-- [**Towards Robust Evaluations of Continual Learning**](https://arxiv.org/abs/1805.09733) , (2018) by *Farquhar, Sebastian and Gal, Yarin* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L179-L186) 
+- [**Towards Robust Evaluations of Continual Learning**](https://arxiv.org/abs/1805.09733) , (2018) by *Farquhar, Sebastian and Gal, Yarin* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L266-L273) 
 ``` Proposes desideratas and reexamines the evaluation protocol ``` 
-- [**Continual Learning in Practice**](https://arxiv.org/abs/1903.05202) , (2018) by *Diethe, Tom, Borchert, Tom, Thereska, Eno, Pigem, Borja de Balle and Lawrence, Neil* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2074-L2081) 
+- [**Continual Learning in Practice**](https://arxiv.org/abs/1903.05202) , (2018) by *Diethe, Tom, Borchert, Tom, Thereska, Eno, Pigem, Borja de Balle and Lawrence, Neil* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2152-L2159) 
 ``` Proposes a reference architecture for a continual learning system ``` 
-- [**Overcoming catastrophic forgetting in neural networks**](https://www.pnas.org/content/pnas/114/13/3521.full.pdf) , (2017) by *Kirkpatrick, James, Pascanu, Razvan, Rabinowitz, Neil, Veness, Joel, Desjardins, Guillaume, Rusu, Andrei A, Milan, Kieran, Quan, John, Ramalho, Tiago, Grabska-Barwinska, Agnieszka and others* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L199-L207) 
-- [**Gradient Episodic Memory for Continual Learning**](http://papers.nips.cc/paper/7225-gradient-episodic-memory-for-continual-learning.pdf) , (2017) by *Lopez-Paz, David and Ranzato, Marc-Aurelio* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L211-L221) 
+- [**Overcoming catastrophic forgetting in neural networks**](https://www.pnas.org/content/pnas/114/13/3521.full.pdf) , (2017) by *Kirkpatrick, James, Pascanu, Razvan, Rabinowitz, Neil, Veness, Joel, Desjardins, Guillaume, Rusu, Andrei A, Milan, Kieran, Quan, John, Ramalho, Tiago, Grabska-Barwinska, Agnieszka and others* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L286-L294) 
+- [**Gradient Episodic Memory for Continual Learning**](http://papers.nips.cc/paper/7225-gradient-episodic-memory-for-continual-learning.pdf) , (2017) by *Lopez-Paz, David and Ranzato, Marc-Aurelio* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L298-L308) 
 ``` A model that alliviates CF via constrained optimization ``` 
-- [**Continual learning with deep generative replay**](https://arxiv.org/abs/1705.08690) , (2017) by *Shin, Hanul, Lee, Jung Kwon, Kim, Jaehong and Kim, Jiwon* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L225-L233) 
+- [**Continual learning with deep generative replay**](https://arxiv.org/abs/1705.08690) , (2017) by *Shin, Hanul, Lee, Jung Kwon, Kim, Jaehong and Kim, Jiwon* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L312-L320) 
 ``` Introduces generative replay ``` 
-- [**An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks**](https://arxiv.org/abs/1312.6211) , (2013) by *Goodfellow, I.~J., Mirza, M., Xiao, D., Courville, A. and Bengio, Y.* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L236-L249) 
+- [**An Empirical Investigation of Catastrophic Forgetting in Gradient-Based Neural Networks**](https://arxiv.org/abs/1312.6211) , (2013) by *Goodfellow, I.~J., Mirza, M., Xiao, D., Courville, A. and Bengio, Y.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L323-L336) 
 ``` Investigates CF in neural networks ``` 
 
 ## New Settings or Metrics
-- [**IIRC: Incremental Implicitly-Refined Classification**](https://chandar-lab.github.io/IIRC/) , (2021) by *Mohamed Abdelsalam, Mojtaba Faramarzi, Shagun Sodhani and Sarath Chandar* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2516-L2522) 
+- [**IIRC: Incremental Implicitly-Refined Classification**](https://chandar-lab.github.io/IIRC/) , (2021) by *Mohamed Abdelsalam, Mojtaba Faramarzi, Shagun Sodhani and Sarath Chandar* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2595-L2601) 
 ``` A setup and benchmark to evaluate lifelong learning models in more real-life aligned scenarios. ``` 
-- [**Wandering Within a World: Online Contextualized Few-Shot Learning**](https://arxiv.org/abs/2007.04546) , (2020) by *Mengye Ren, Michael L. Iuzzolino, Michael C. Mozer and Richard S. Zemel* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L69-L77) 
+- [**Sequoia - Towards a Systematic Organization of Continual Learning Research**](https://github.com/lebrice/Sequoia) , (2021) by *Fabrice Normandin, Florian  Golemo,  Oleksiy Ostapenko,  Matthew Riemer,  Pau Rodriguez,  Julio Hurtado,  Khimya Khetarpal, Timothée Lesort,  Laurent Charlin, Irina Rish and Massimo Caccia* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2783-L2792) 
+``` A library that unifies Continual Supervised and Continual Reinforcement Learning research ``` 
+- [**Wandering Within a World: Online Contextualized Few-Shot Learning**](https://arxiv.org/abs/2007.04546) , (2020) by *Mengye Ren, Michael L. Iuzzolino, Michael C. Mozer and Richard S. Zemel* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L156-L164) 
 ``` proposes a new continual few-shot setting where spacial and temporal context can be leveraged to and unseen classes need to be predicted ``` 
-- [**Defining Benchmarks for Continual Few-Shot Learning**](https://arxiv.org/abs/2004.11967) , (2020) by *Antoniou, Antreas, Patacchiola, Massimiliano, Ochal, Mateusz and Storkey, Amos* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L111-L118) 
+- [**Defining Benchmarks for Continual Few-Shot Learning**](https://arxiv.org/abs/2004.11967) , (2020) by *Antoniou, Antreas, Patacchiola, Massimiliano, Ochal, Mateusz and Storkey, Amos* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L198-L205) 
 ``` (title is a good enough summary) ``` 
-- [**Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning**](https://arxiv.org/abs/2003.05856) , (2020) by *Caccia, Massimo, Rodriguez, Pau, Ostapenko, Oleksiy, Normandin, Fabrice, Lin, Min, Caccia, Lucas, Laradji, Issam, Rish, Irina, Lacoste, Alexandre, Vazquez, David and Charlin, Laurent* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1216-L1223) 
+- [**Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning**](https://arxiv.org/abs/2003.05856) , (2020) by *Caccia, Massimo, Rodriguez, Pau, Ostapenko, Oleksiy, Normandin, Fabrice, Lin, Min, Caccia, Lucas, Laradji, Issam, Rish, Irina, Lacoste, Alexandre, Vazquez, David and Charlin, Laurent* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1304-L1311) 
 ``` Proposes a new approach to CL evaluation more aligned with real-life applications, bringing CL closer to Online Learning and Open-World learning ``` 
-- [**Compositional Language Continual Learning**](https://openreview.net/forum?id=rklnDgHtDS) , (2020) by *Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1304-L1311) 
+- [**Compositional Language Continual Learning**](https://openreview.net/forum?id=rklnDgHtDS) , (2020) by *Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1382-L1389) 
 ``` method for compositional continual learning of sequence-to-sequence models ``` 
-- [**A Wholistic View of Continual Learning with Deep Neural Networks: Forgotten Lessons and the Bridge to Active and Open World Learning**](https://arxiv.org/abs/2009.01797) , (2020) by *Mundt, Martin, Hong, Yong Won, Pliushch, Iuliia and Ramesh, Visvanathan* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2341-L2348) 
+- [**A Wholistic View of Continual Learning with Deep Neural Networks: Forgotten Lessons and the Bridge to Active and Open World Learning**](https://arxiv.org/abs/2009.01797) , (2020) by *Mundt, Martin, Hong, Yong Won, Pliushch, Iuliia and Ramesh, Visvanathan* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2420-L2427) 
 ``` propose a consolidated view to bridge continual learning, active learning and open set recognition in DNNs ``` 
-- **Don't forget, there is more than forgetting: new metrics for Continual Learning**, (2018) by *D{\'\i}az-Rodr{\'\i}guez, Natalia, Lomonaco, Vincenzo, Filliat, David and Maltoni, Davide* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2695-L2701) 
+- **Don't forget, there is more than forgetting: new metrics for Continual Learning**, (2018) by *D{\'\i}az-Rodr{\'\i}guez, Natalia, Lomonaco, Vincenzo, Filliat, David and Maltoni, Davide* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2774-L2780) 
 ``` introduces a CL score that takes more than just forgetting into account ``` 
 
+## General Continual Learning Methods
+- [**Overcoming catastrophic forgetting in neural networks**](https://www.pnas.org/content/pnas/114/13/3521.full.pdf) , (2017) by *Kirkpatrick, James, Pascanu, Razvan, Rabinowitz, Neil, Veness, Joel, Desjardins, Guillaume, Rusu, Andrei A, Milan, Kieran, Quan, John, Ramalho, Tiago, Grabska-Barwinska, Agnieszka and others* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L286-L294) 
+- [**PathNet: Evolution Channels Gradient Descent in Super Neural Networks**](http://arxiv.org/abs/1701.08734) , (2017) by *Chrisantha Fernando and
+Dylan Banarse and
+Charles Blundell and
+Yori Zwols and
+David Ha and
+Andrei A. Rusu and
+Alexander Pritzel and
+Daan Wierstra* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1621-L1641) 
+
+## Task-Agnostic Continual Learning
+- **Learning where to learn: Gradient sparsity in meta and continual learning**, (2021) by *Von Oswald, Johannes, Zhao, Dominic, Kobayashi, Seijin, Schug, Simon, Caccia, Massimo, Zucchet, Nicolas and Sacramento, Jo{\~a}o* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L79-L86) 
+- [**Uncertainty-guided Continual Learning with Bayesian Neural Networks**](https://openreview.net/forum?id=HklUCCVKDB) , (2020) by *Sayna Ebrahimi, Mohamed Elhoseiny, Trevor Darrell and Marcus Rohrbach* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L388-L395) 
+``` Uses Bayes by Backprop for variational Continual Learning. ``` 
+- [**Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning**](https://arxiv.org/abs/2003.05856) , (2020) by *Caccia, Massimo, Rodriguez, Pau, Ostapenko, Oleksiy, Normandin, Fabrice, Lin, Min, Caccia, Lucas, Laradji, Issam, Rish, Irina, Lacoste, Alexandre, Vazquez, David and Charlin, Laurent* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1304-L1311) 
+``` Proposes a new approach to CL evaluation more aligned with real-life applications, bringing CL closer to Online Learning and Open-World learning ``` 
+- **iTAML: An Incremental Task-Agnostic Meta-learning Approach**, (2020) by *Rajasegaran, Jathushan, Khan, Salman, Hayat, Munawar, Khan, Fahad Shahbaz and Shah, Mubarak* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2236-L2243) 
+- [**Continual Unsupervised Representation Learning**](https://arxiv.org/pdf/1910.14481.pdf) , (2019) by *Dushyant Rao, Francesco Visin, Andrei A. Rusu, Yee Whye Teh, Razvan Pascanu and Raia Hadsell* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L773-L782) 
+``` Introduces unsupervised continual learning (no task label and no task boundaries) ``` 
+- [**A Neural Dirichlet Process Mixture Model for Task-Free Continual Learning**](https://arxiv.org/pdf/2001.00689.pdf) , (2019) by *Lee, Soochan, Ha, Junsoo, Zhang, Dongsu and Kim, Gunhee* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1371-L1378) 
+``` This paper introduces expansion-based approach for task-free continual learning ``` 
+- [**Task Agnostic Continual Learning Using Online Variational Bayes**](https://arxiv.org/pdf/1803.10123.pdf) , (2018) by *Chen Zeno, Itay Golan, Elad Hoffer and Daniel Soudry* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L411-L420) 
+``` Introduces an optimizer for CL that relies on closed form updates of mu and sigma of BNN; introduce label trick for class learning (single-head) but warning: it isn't really task-agnostic ``` 
+
 ## Regularization Methods
-- [**Continual Learning with Bayesian Neural Networks for Non-Stationary Data**](https://openreview.net/forum?id=SJlsFpVtDB) , (2020) by *Richard Kurle, Botond Cseke, Alexej Klushyn, Patrick van der Smagt and Stephan Günnemann* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L631-L638) 
+- [**Continual Learning with Bayesian Neural Networks for Non-Stationary Data**](https://openreview.net/forum?id=SJlsFpVtDB) , (2020) by *Richard Kurle, Botond Cseke, Alexej Klushyn, Patrick van der Smagt and Stephan Günnemann* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L719-L726) 
 ``` continual learning for non-stationary data using Bayesian neural networks and memory-based online variational Bayes ``` 
-- [**Improving and Understanding Variational Continual Learning**](https://arxiv.org/abs/1905.02099) , (2019) by *Siddharth Swaroop, Cuong V. Nguyen, Thang D. Bui and Richard E. Turner* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L289-L297) 
+- [**Improving and Understanding Variational Continual Learning**](https://arxiv.org/abs/1905.02099) , (2019) by *Siddharth Swaroop, Cuong V. Nguyen, Thang D. Bui and Richard E. Turner* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L376-L384) 
 ``` Improved results and interpretation of VCL. ``` 
-- [**Uncertainty-based Continual Learning with Adaptive Regularization**](http://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-adaptive-regularization.pdf) , (2019) by *Ahn, Hongjoon, Cha, Sungmin, Lee, Donggyu and Moon, Taesup* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L310-L320) 
+- [**Uncertainty-based Continual Learning with Adaptive Regularization**](http://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-adaptive-regularization.pdf) , (2019) by *Ahn, Hongjoon, Cha, Sungmin, Lee, Donggyu and Moon, Taesup* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L398-L408) 
 ``` Introduces VCL with uncertainty measured for neurons instead of weights. ``` 
-- [**Functional Regularisation for Continual Learning with Gaussian Processes**](https://arxiv.org/abs/1901.11356) , (2019) by *Titsias, Michalis K, Schwarz, Jonathan, Matthews, Alexander G de G, Pascanu, Razvan and Teh, Yee Whye* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1094-L1101) 
+- [**Functional Regularisation for Continual Learning with Gaussian Processes**](https://arxiv.org/abs/1901.11356) , (2019) by *Titsias, Michalis K, Schwarz, Jonathan, Matthews, Alexander G de G, Pascanu, Razvan and Teh, Yee Whye* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1182-L1189) 
 ``` functional regularisation for Continual Learning: avoids forgetting a previous task by constructing and memorising an approximate posterior belief over the underlying task-specific function ``` 
-- [**Task Agnostic Continual Learning Using Online Variational Bayes**](https://arxiv.org/pdf/1803.10123.pdf) , (2018) by *Chen Zeno, Itay Golan, Elad Hoffer and Daniel Soudry* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L323-L332) 
-``` Introduces an optimizer for CL that relies on closed form updates of mu and sigma of BNN; introduce label trick for class learning (single-head) ``` 
-- [**Overcoming Catastrophic Interference using Conceptor-Aided Backpropagation**](https://openreview.net/forum?id=B1al7jg0b) , (2018) by *Xu He and Herbert Jaeger* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L364-L371) 
+- [**Task Agnostic Continual Learning Using Online Variational Bayes**](https://arxiv.org/pdf/1803.10123.pdf) , (2018) by *Chen Zeno, Itay Golan, Elad Hoffer and Daniel Soudry* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L411-L420) 
+``` Introduces an optimizer for CL that relies on closed form updates of mu and sigma of BNN; introduce label trick for class learning (single-head) but warning: it isn't really task-agnostic ``` 
+- [**Overcoming Catastrophic Interference using Conceptor-Aided Backpropagation**](https://openreview.net/forum?id=B1al7jg0b) , (2018) by *Xu He and Herbert Jaeger* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L452-L459) 
 ``` Conceptor-Aided Backprop (CAB): gradients are shielded by conceptors against degradation of previously learned tasks ``` 
-- [**Overcoming Catastrophic Forgetting with Hard Attention to the Task**](http://proceedings.mlr.press/v80/serra18a.html) , (2018) by *Serra, Joan, Suris, Didac, Miron, Marius and Karatzoglou, Alexandros* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L384-L400) 
+- [**Overcoming Catastrophic Forgetting with Hard Attention to the Task**](http://proceedings.mlr.press/v80/serra18a.html) , (2018) by *Serra, Joan, Suris, Didac, Miron, Marius and Karatzoglou, Alexandros* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L472-L488) 
 ``` Introducing a hard attention idea with binary masks ``` 
-- [**Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence**](https://arxiv.org/abs/1801.10112) , (2018) by *Chaudhry, Arslan, Dokania, Puneet K, Ajanthan, Thalaiyasingam and Torr, Philip HS* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L403-L410) 
+- [**Riemannian Walk for Incremental Learning: Understanding Forgetting and Intransigence**](https://arxiv.org/abs/1801.10112) , (2018) by *Chaudhry, Arslan, Dokania, Puneet K, Ajanthan, Thalaiyasingam and Torr, Philip HS* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L491-L498) 
 ``` Formalizes the shortcomings of multi-head evaluation, as well as the importance of replay in single-head setup. Presenting an improved version of EWC. ``` 
-- [**Variational Continual Learning**](https://arxiv.org/abs/1710.10628) , (2018) by *Cuong V. Nguyen, Yingzhen Li, Thang D. Bui and Richard E. Turner* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L434-L441) 
-- [**Progress \& compress: A scalable framework for continual learning**](https://arxiv.org/abs/1805.06370) , (2018) by *Schwarz, Jonathan, Luketina, Jelena, Czarnecki, Wojciech M, Grabska-Barwinska, Agnieszka, Teh, Yee Whye, Pascanu, Razvan and Hadsell, Raia* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L445-L452) 
+- [**Variational Continual Learning**](https://arxiv.org/abs/1710.10628) , (2018) by *Cuong V. Nguyen, Yingzhen Li, Thang D. Bui and Richard E. Turner* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L522-L529) 
+- [**Progress \& compress: A scalable framework for continual learning**](https://arxiv.org/abs/1805.06370) , (2018) by *Schwarz, Jonathan, Luketina, Jelena, Czarnecki, Wojciech M, Grabska-Barwinska, Agnieszka, Teh, Yee Whye, Pascanu, Razvan and Hadsell, Raia* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L533-L540) 
 ``` A new P\&C architecture; online EWC for keeping the knowledge about the previous task, knowledge for keeping the knowledge about the current task (Multi-head setting, RL) ``` 
-- **Online structured laplace approximations for overcoming catastrophic forgetting**, (2018) by *Ritter, Hippolyt, Botev, Aleksandar and Barber, David* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1803-L1810) 
-- [**Facilitating Bayesian Continual Learning by Natural Gradients and Stein Gradients**](https://arxiv.org/abs/1904.10644) , (2018) by *Chen, Yu, Diethe, Tom and Lawrence, Neil* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2084-L2091) 
+- **Online structured laplace approximations for overcoming catastrophic forgetting**, (2018) by *Ritter, Hippolyt, Botev, Aleksandar and Barber, David* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1881-L1888) 
+- [**Facilitating Bayesian Continual Learning by Natural Gradients and Stein Gradients**](https://arxiv.org/abs/1904.10644) , (2018) by *Chen, Yu, Diethe, Tom and Lawrence, Neil* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2162-L2169) 
 ``` Improves on VCL ``` 
-- [**Overcoming catastrophic forgetting in neural networks**](https://www.pnas.org/content/pnas/114/13/3521.full.pdf) , (2017) by *Kirkpatrick, James, Pascanu, Razvan, Rabinowitz, Neil, Veness, Joel, Desjardins, Guillaume, Rusu, Andrei A, Milan, Kieran, Quan, John, Ramalho, Tiago, Grabska-Barwinska, Agnieszka and others* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L199-L207) 
-- [**Memory Aware Synapses: Learning what (not) to forget**](http://arxiv.org/abs/1711.09601) , (2017) by *Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach and Tinne Tuytelaars* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L416-L429) 
+- [**Overcoming catastrophic forgetting in neural networks**](https://www.pnas.org/content/pnas/114/13/3521.full.pdf) , (2017) by *Kirkpatrick, James, Pascanu, Razvan, Rabinowitz, Neil, Veness, Joel, Desjardins, Guillaume, Rusu, Andrei A, Milan, Kieran, Quan, John, Ramalho, Tiago, Grabska-Barwinska, Agnieszka and others* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L286-L294) 
+- [**Memory Aware Synapses: Learning what (not) to forget**](http://arxiv.org/abs/1711.09601) , (2017) by *Rahaf Aljundi, Francesca Babiloni, Mohamed Elhoseiny, Marcus Rohrbach and Tinne Tuytelaars* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L504-L517) 
 ``` Importance of parameter measured based on their contribution to change in the learned prediction function ``` 
-- [**Continual Learning Through Synaptic Intelligence**](http://proceedings.mlr.press/v70/zenke17a.html) , (2017) by *Zenke, Friedeman, Poole, Ben and Ganguli, Surya * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L455-L470) 
+- [**Continual Learning Through Synaptic Intelligence**](http://proceedings.mlr.press/v70/zenke17a.html) , (2017) by *Zenke, Friedeman, Poole, Ben and Ganguli, Surya * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L543-L558) 
 ``` Synaptic Intelligence (SI). Importance of parameter measured based on their contribution to change in the loss.  ``` 
-- **Overcoming catastrophic forgetting by incremental moment matching**, (2017) by *Lee, Sang-Woo, Kim, Jin-Hwa, Jun, Jaehyun, Ha, Jung-Woo and Zhang, Byoung-Tak* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1672-L1679) 
+- **Overcoming catastrophic forgetting by incremental moment matching**, (2017) by *Lee, Sang-Woo, Kim, Jin-Hwa, Jun, Jaehyun, Ha, Jung-Woo and Zhang, Byoung-Tak* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1750-L1757) 
 
 ## Distillation Methods
-- [**Dark Experience for General Continual Learning: a Strong, Simple Baseline**](https://papers.nips.cc/paper/2020/file/b704ea2c39778f07c617f6b7ce480e9e-Paper.pdf) , (2020) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo, Abati, Davide and Calderara, Simone* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L14-L24) 
-- [**Online Continual Learning under Extreme Memory Constraints**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123730715.pdf) , (2020) by *Fini, Enrico, Lathuilière, Stèphane, Sangineto, Enver, Nabi, Moin and Ricci, Elisa* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2243-L2250) 
+- [**Dark Experience for General Continual Learning: a Strong, Simple Baseline**](https://papers.nips.cc/paper/2020/file/b704ea2c39778f07c617f6b7ce480e9e-Paper.pdf) , (2020) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo, Abati, Davide and Calderara, Simone* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L101-L111) 
+- [**Online Continual Learning under Extreme Memory Constraints**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123730715.pdf) , (2020) by *Fini, Enrico, Lathuilière, Stèphane, Sangineto, Enver, Nabi, Moin and Ricci, Elisa* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2322-L2329) 
 ``` Introduces Memory-Constrained Online Continual Learning, a setting where no information can be transferred between tasks, and proposes a distillation-based solution (Batch-level Distillation) ``` 
-- [**PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123650086.pdf) , (2020) by *Douillard, Arthur, Cord, Matthieu, Ollion, Charles, Robert, Thomas and Valle, Eduardo* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2312-L2319) 
+- [**PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123650086.pdf) , (2020) by *Douillard, Arthur, Cord, Matthieu, Ollion, Charles, Robert, Thomas and Valle, Eduardo* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2391-L2398) 
 ``` Novel knowledge distillation that trades efficiently rigidity and plasticity to learn large amount of small tasks ``` 
-- [**Overcoming Catastrophic Forgetting With Unlabeled Data in the Wild**](https://arxiv.org/abs/1903.12648) , (2019) by *Lee, Kibok, Lee, Kimin, Shin, Jinwoo and Lee, Honglak* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L800-L808) 
+- [**Overcoming Catastrophic Forgetting With Unlabeled Data in the Wild**](https://arxiv.org/abs/1903.12648) , (2019) by *Lee, Kibok, Lee, Kimin, Shin, Jinwoo and Lee, Honglak* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L888-L896) 
 ``` Introducing global distillation loss and balanced finetuning; leveraging unlabeled data in the open world setting (Single-head setting) ``` 
-- [**Large scale incremental learning**](https://arxiv.org/abs/1905.13260) , (2019) by *Wu, Yue, Chen, Yinpeng, Wang, Lijuan, Ye, Yuancheng, Liu, Zicheng, Guo, Yandong and Fu, Yun* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L811-L819) 
+- [**Large scale incremental learning**](https://arxiv.org/abs/1905.13260) , (2019) by *Wu, Yue, Chen, Yinpeng, Wang, Lijuan, Ye, Yuancheng, Liu, Zicheng, Guo, Yandong and Fu, Yun* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L899-L907) 
 ``` Introducing bias parameters to the last fully connected layer to resolve the data imbalance issue (Single-head setting) ``` 
-- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L996-L1002) 
-- [**Lifelong learning via progressive distillation and retrospection**](https://arxiv.org/abs/1905.13260) , (2018) by *Hou, Saihui, Pan, Xinyu, Change Loy, Chen, Wang, Zilei and Lin, Dahua* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L822-L830) 
+- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1084-L1090) 
+- [**Lifelong learning via progressive distillation and retrospection**](https://arxiv.org/abs/1905.13260) , (2018) by *Hou, Saihui, Pan, Xinyu, Change Loy, Chen, Wang, Zilei and Lin, Dahua* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L910-L918) 
 ``` Introducing an expert of the current task in the knowledge distillation method (Multi-head setting) ``` 
-- [**End-to-end incremental learning**](https://arxiv.org/abs/1807.09536) , (2018) by *Castro, Francisco M, Marin-Jimenez, Manuel J, Guil, Nicolas, Schmid, Cordelia and Alahari, Karteek* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L833-L841) 
+- [**End-to-end incremental learning**](https://arxiv.org/abs/1807.09536) , (2018) by *Castro, Francisco M, Marin-Jimenez, Manuel J, Guil, Nicolas, Schmid, Cordelia and Alahari, Karteek* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L921-L929) 
 ``` Finetuning the last fully connected layer with a balanced dataset to resolve the data imbalance issue (Single-head setting) ``` 
-- [**Learning without forgetting**](https://arxiv.org/abs/1606.09282) , (2017) by *Li, Zhizhong and Hoiem, Derek* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L473-L481) 
+- [**Learning without forgetting**](https://arxiv.org/abs/1606.09282) , (2017) by *Li, Zhizhong and Hoiem, Derek* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L561-L569) 
 ``` Functional regularization through distillation (keeping the output of the updated network on the new data close to the output of the old network on the new data) ``` 
-- [**icarl: Incremental classifier and representation learning**](https://arxiv.org/abs/1611.07725) , (2017) by *Rebuffi, Sylvestre-Alvise, Kolesnikov, Alexander, Sperl, Georg and Lampert, Christoph H* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L844-L852) 
+- [**icarl: Incremental classifier and representation learning**](https://arxiv.org/abs/1611.07725) , (2017) by *Rebuffi, Sylvestre-Alvise, Kolesnikov, Alexander, Sperl, Georg and Lampert, Christoph H* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L932-L940) 
 ``` Binary cross-entropy loss for representation learning \& exemplar memory (or coreset) for replay (Single-head setting) ``` 
 
 ## Rehearsal Methods
-- [**Rethinking Experience Replay: a Bag of Tricks for Continual Learning**](https://ieeexplore.ieee.org/abstract/document/9412614) , (2021) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo and Calderara, Simone* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1-L12) 
-- [**Graph-Based Continual Learning**](https://openreview.net/forum?id=HHSEKOnPvaO) , (2021) by *Binh Tang and David S. Matteson* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2387-L2394) 
+- [**Rethinking Experience Replay: a Bag of Tricks for Continual Learning**](https://ieeexplore.ieee.org/abstract/document/9412614) , (2021) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo and Calderara, Simone* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L88-L99) 
+- [**Graph-Based Continual Learning**](https://openreview.net/forum?id=HHSEKOnPvaO) , (2021) by *Binh Tang and David S. Matteson* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2466-L2473) 
 ``` Use graphs to link saved samples and improve the memory quality. ``` 
-- [**Online Class-Incremental Continual Learning with Adversarial Shapley Value**](https://arxiv.org/pdf/2009.00093.pdf) , (2021) by *Dongsub Shim, Zheda Mai, Jihwan Jeong\*, Scott Sanner, Hyunwoo Kim and Jongseong Jang* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2551-L2558) 
+- [**Online Class-Incremental Continual Learning with Adversarial Shapley Value**](https://arxiv.org/pdf/2009.00093.pdf) , (2021) by *Dongsub Shim, Zheda Mai, Jihwan Jeong\*, Scott Sanner, Hyunwoo Kim and Jongseong Jang* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2630-L2637) 
 ``` Use Shapley Value adversarially to select which samples to relay ``` 
-- [**Dark Experience for General Continual Learning: a Strong, Simple Baseline**](https://papers.nips.cc/paper/2020/file/b704ea2c39778f07c617f6b7ce480e9e-Paper.pdf) , (2020) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo, Abati, Davide and Calderara, Simone* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L14-L24) 
-- **GDumb: A simple approach that questions our progress in continual learning**, (2020) by *Prabhu, Ameya, Torr, Philip HS and Dokania, Puneet K* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L26-L34) 
+- [**Dark Experience for General Continual Learning: a Strong, Simple Baseline**](https://papers.nips.cc/paper/2020/file/b704ea2c39778f07c617f6b7ce480e9e-Paper.pdf) , (2020) by *Buzzega, Pietro, Boschini, Matteo, Porrello, Angelo, Abati, Davide and Calderara, Simone* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L101-L111) 
+- **GDumb: A simple approach that questions our progress in continual learning**, (2020) by *Prabhu, Ameya, Torr, Philip HS and Dokania, Puneet K* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L113-L121) 
 ``` introduces a super simple methods that outperforms almost all methods in all of the CL benchmarks. We need new better benchamrks ``` 
-- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L81-L90) 
-- [**Imbalanced Continual Learning with Partitioning Reservoir Sampling**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580409.pdf) , (2020) by *Kim, Chris Dongjoo, Jeong, Jinseo and Kim, Gunhee* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2216-L2223) 
-- [**PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123650086.pdf) , (2020) by *Douillard, Arthur, Cord, Matthieu, Ollion, Charles, Robert, Thomas and Valle, Eduardo* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2312-L2319) 
+- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L168-L177) 
+- [**Imbalanced Continual Learning with Partitioning Reservoir Sampling**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123580409.pdf) , (2020) by *Kim, Chris Dongjoo, Jeong, Jinseo and Kim, Gunhee* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2295-L2302) 
+- [**PODNet: Pooled Outputs Distillation for Small-Tasks Incremental Learning**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123650086.pdf) , (2020) by *Douillard, Arthur, Cord, Matthieu, Ollion, Charles, Robert, Thomas and Valle, Eduardo* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2391-L2398) 
 ``` Novel knowledge distillation that trades efficiently rigidity and plasticity to learn large amount of small tasks ``` 
 - [**{REMIND Your Neural Network to Prevent Catastrophic Forgetting}**](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123650681.pdf) , (2020) by *Hayes, Tyler L., Kafle, Kushal, Shrestha, Robik and
-Acharya, Manoj and Kanan, Christopher* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2331-L2339) 
-- [**Efficient Lifelong Learning with A-GEM**](https://arxiv.org/abs/1812.00420) , (2019) by *Chaudhry, Arslan, Ranzato, Marc’Aurelio, Rohrbach, Marcus and Elhoseiny, Mohamed* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L189-L196) 
+Acharya, Manoj and Kanan, Christopher* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2410-L2418) 
+- [**Efficient Lifelong Learning with A-GEM**](https://arxiv.org/abs/1812.00420) , (2019) by *Chaudhry, Arslan, Ranzato, Marc’Aurelio, Rohrbach, Marcus and Elhoseiny, Mohamed* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L276-L283) 
 ``` More efficient GEM; Introduces online continual learning ``` 
-- [**Orthogonal Gradient Descent for Continual Learning**](https://arxiv.org/abs/1910.07104) , (2019) by *Mehrdad Farajtabar, Navid Azizan, Alex Mott and Ang Li* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L542-L551) 
+- [**Orthogonal Gradient Descent for Continual Learning**](https://arxiv.org/abs/1910.07104) , (2019) by *Mehrdad Farajtabar, Navid Azizan, Alex Mott and Ang Li* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L630-L639) 
 ``` projecting the gradients from new tasks onto a subspace in which the neural network output on previous task does not change and the projected gradient is still in a useful direction for learning the new task ``` 
-- [**Gradient based sample selection for online continual learning**](http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf) , (2019) by *Aljundi, Rahaf, Lin, Min, Goujaud, Baptiste and Bengio, Yoshua* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L555-L565) 
+- [**Gradient based sample selection for online continual learning**](http://papers.nips.cc/paper/9354-gradient-based-sample-selection-for-online-continual-learning.pdf) , (2019) by *Aljundi, Rahaf, Lin, Min, Goujaud, Baptiste and Bengio, Yoshua* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L643-L653) 
 ``` sample selection as a constraint reduction problem based on the constrained optimization view of continual learning ``` 
 - [**Online Continual Learning with Maximal Interfered Retrieval**](http://papers.nips.cc/paper/9357-online-continual-learning-with-maximal-interfered-retrieval.pdf) , (2019) by *Aljundi, Rahaf and
-, Lucas, Belilovsky, Eugene, Caccia, Massimo, Lin, Min, Charlin, Laurent and Tuytelaars, Tinne* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L569-L580) 
+, Lucas, Belilovsky, Eugene, Caccia, Massimo, Lin, Min, Charlin, Laurent and Tuytelaars, Tinne* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L657-L668) 
 ``` Controlled sampling of memories for replay to automatically rehearse on tasks currently undergoing the most forgetting ``` 
-- [**Online Learned Continual Compression with Adaptative Quantization Module**](https://arxiv.org/abs/1911.08019) , (2019) by *Caccia, Lucas, Belilovsky, Eugene, Caccia, Massimo and Pineau, Joelle* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L584-L591) 
+- [**Online Learned Continual Compression with Adaptative Quantization Module**](https://arxiv.org/abs/1911.08019) , (2019) by *Caccia, Lucas, Belilovsky, Eugene, Caccia, Massimo and Pineau, Joelle* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L672-L679) 
 ``` Uses stacks of VQ-VAE modules to progressively compress the data stream, enabling better rehearsal ``` 
-- [**Large scale incremental learning**](https://arxiv.org/abs/1905.13260) , (2019) by *Wu, Yue, Chen, Yinpeng, Wang, Lijuan, Ye, Yuancheng, Liu, Zicheng, Guo, Yandong and Fu, Yun* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L811-L819) 
+- [**Large scale incremental learning**](https://arxiv.org/abs/1905.13260) , (2019) by *Wu, Yue, Chen, Yinpeng, Wang, Lijuan, Ye, Yuancheng, Liu, Zicheng, Guo, Yandong and Fu, Yun* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L899-L907) 
 ``` Introducing bias parameters to the last fully connected layer to resolve the data imbalance issue (Single-head setting) ``` 
-- **Learning a Unified Classifier Incrementally via Rebalancing**, (2019) by *Hou, Saihui, Pan, Xinyu, Loy, Chen Change, Wang, Zilei and Lin, Dahua* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L856-L863) 
-- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L996-L1002) 
-- [**Experience replay for continual learning**](https://arxiv.org/abs/1811.11682) , (2019) by *Rolnick, David, Ahuja, Arun, Schwarz, Jonathan, Lillicrap, Timothy and Wayne, Gregory* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1204-L1212) 
-- [**Gradient Episodic Memory for Continual Learning**](http://papers.nips.cc/paper/7225-gradient-episodic-memory-for-continual-learning.pdf) , (2017) by *Lopez-Paz, David and Ranzato, Marc-Aurelio* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L211-L221) 
+- **Learning a Unified Classifier Incrementally via Rebalancing**, (2019) by *Hou, Saihui, Pan, Xinyu, Loy, Chen Change, Wang, Zilei and Lin, Dahua* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L944-L951) 
+- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1084-L1090) 
+- [**Experience replay for continual learning**](https://arxiv.org/abs/1811.11682) , (2019) by *Rolnick, David, Ahuja, Arun, Schwarz, Jonathan, Lillicrap, Timothy and Wayne, Gregory* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1292-L1300) 
+- [**Gradient Episodic Memory for Continual Learning**](http://papers.nips.cc/paper/7225-gradient-episodic-memory-for-continual-learning.pdf) , (2017) by *Lopez-Paz, David and Ranzato, Marc-Aurelio* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L298-L308) 
 ``` A model that alliviates CF via constrained optimization ``` 
-- [**icarl: Incremental classifier and representation learning**](https://arxiv.org/abs/1611.07725) , (2017) by *Rebuffi, Sylvestre-Alvise, Kolesnikov, Alexander, Sperl, Georg and Lampert, Christoph H* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L844-L852) 
+- [**icarl: Incremental classifier and representation learning**](https://arxiv.org/abs/1611.07725) , (2017) by *Rebuffi, Sylvestre-Alvise, Kolesnikov, Alexander, Sperl, Georg and Lampert, Christoph H* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L932-L940) 
 ``` Binary cross-entropy loss for representation learning \& exemplar memory (or coreset) for replay (Single-head setting) ``` 
-- [**Catastrophic Forgetting, Rehearsal and Pseudorehearsal**](https://doi.org/10.1080/09540099550039318) , (1995) by * Anthony   Robins * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1822-L1835) 
+- [**Catastrophic Forgetting, Rehearsal and Pseudorehearsal**](https://doi.org/10.1080/09540099550039318) , (1995) by * Anthony   Robins * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1900-L1913) 
 
 ## Generative Replay Methods
-- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L81-L90) 
-- [**Brain-Like Replay For Continual Learning With Artificial Neural Networks**](https://baicsworkshop.github.io/pdf/BAICS_8.pdf) , (2020) by *van de Ven, Gido M, Siegelmann, Hava T and Tolias, Andreas S* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L159-L165) 
-- [**Learning to remember: A synaptic plasticity driven framework for continual learning**](https://openaccess.thecvf.com/content_CVPR_2019/html/Ostapenko_Learning_to_Remember_A_Synaptic_Plasticity_Driven_Framework_for_Continual_CVPR_2019_paper.html) , (2019) by *Ostapenko, Oleksiy, Puscas, Mihai, Klein, Tassilo, Jahnichen, Patrick and Nabi, Moin* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L49-L57) 
+- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L168-L177) 
+- [**Brain-Like Replay For Continual Learning With Artificial Neural Networks**](https://baicsworkshop.github.io/pdf/BAICS_8.pdf) , (2020) by *van de Ven, Gido M, Siegelmann, Hava T and Tolias, Andreas S* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L246-L252) 
+- [**Learning to remember: A synaptic plasticity driven framework for continual learning**](https://openaccess.thecvf.com/content_CVPR_2019/html/Ostapenko_Learning_to_Remember_A_Synaptic_Plasticity_Driven_Framework_for_Continual_CVPR_2019_paper.html) , (2019) by *Ostapenko, Oleksiy, Puscas, Mihai, Klein, Tassilo, Jahnichen, Patrick and Nabi, Moin* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L136-L144) 
 ``` introdudes Dynamic generative memory (DGM) which relies on conditional generative adversarial networks with learnable connection plasticity realized with neural masking ``` 
-- [**Generative Models from the perspective of Continual Learning**](https://hal.archives-ouvertes.fr/hal-01951954) , (2019) by *Lesort, Timothée, Caselles-Dupré, Hugo, Garcia-Ortiz, Michael, Goudou, Jean-Fran{\c c}ois and Filliat, David* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L697-L709) 
+- [**Generative Models from the perspective of Continual Learning**](https://hal.archives-ouvertes.fr/hal-01951954) , (2019) by *Lesort, Timothée, Caselles-Dupré, Hugo, Garcia-Ortiz, Michael, Goudou, Jean-Fran{\c c}ois and Filliat, David* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L785-L797) 
 ``` Extensive evaluation of CL methods for generative modeling ``` 
-- [**Closed-loop Memory GAN for Continual Learning**](http://dl.acm.org/citation.cfm?id=3367471.3367504) , (2019) by *Rios, Amanda and Itti, Laurent* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1004-L1018) 
-- [**Marginal replay vs conditional replay for continual learning**](https://arxiv.org/abs/1810.12069) , (2019) by *Lesort, Timothée, Gepperth, Alexander, Stoian, Andrei and Filliat, David* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1149-L1158) 
+- [**Closed-loop Memory GAN for Continual Learning**](http://dl.acm.org/citation.cfm?id=3367471.3367504) , (2019) by *Rios, Amanda and Itti, Laurent* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1092-L1106) 
+- [**Marginal replay vs conditional replay for continual learning**](https://arxiv.org/abs/1810.12069) , (2019) by *Lesort, Timothée, Gepperth, Alexander, Stoian, Andrei and Filliat, David* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1237-L1246) 
 ``` Extensive evaluation of generative replay methods ``` 
-- [**Generative replay with feedback connections as a general strategy for continual learning**](https://arxiv.org/abs/1809.10635) , (2018) by *Michiel van der Ven and Andreas S. Tolias* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L595-L603) 
+- [**Generative replay with feedback connections as a general strategy for continual learning**](https://arxiv.org/abs/1809.10635) , (2018) by *Michiel van der Ven and Andreas S. Tolias* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L683-L691) 
 ``` smarter Generative Replay ``` 
-- [**Continual learning with deep generative replay**](https://arxiv.org/abs/1705.08690) , (2017) by *Shin, Hanul, Lee, Jung Kwon, Kim, Jaehong and Kim, Jiwon* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L225-L233) 
+- [**Continual learning with deep generative replay**](https://arxiv.org/abs/1705.08690) , (2017) by *Shin, Hanul, Lee, Jung Kwon, Kim, Jaehong and Kim, Jiwon* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L312-L320) 
 ``` Introduces generative replay ``` 
 
 ## Dynamic Architectures or Routing Methods
 - [**ORACLE: Order Robust Adaptive Continual Learning**](http://arxiv.org/abs/1902.09432) , (2019) by *Jaehong Yoon and
 Saehoon Kim and
 Eunho Yang and
-Sung Ju Hwang* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L335-L351) 
+Sung Ju Hwang* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L423-L439) 
 - [**Learn to Grow: {A} Continual Structure Learning Framework for Overcoming
 Catastrophic Forgetting**](http://arxiv.org/abs/1904.00310) , (2019) by *Xilai Li and
 Yingbo Zhou and
 Tianfu Wu and
 Richard Socher and
-Caiming Xiong* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1953-L1971) 
-- [**Incremental Learning through Deep Adaptation**](https://openreview.net/forum?id=ryj0790hb) , (2018) by *Amir Rosenfeld and John K. Tsotsos* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L496-L502) 
-- **Packnet: Adding multiple tasks to a single network by iterative pruning**, (2018) by *Mallya, Arun and Lazebnik, Svetlana* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L866-L873) 
-- **Piggyback: Adapting a single network to multiple tasks by learning to mask weights**, (2018) by *Mallya, Arun, Davis, Dillon and Lazebnik, Svetlana* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L875-L882) 
-- [**Continual Learning in Practice**](https://arxiv.org/abs/1903.05202) , (2018) by *Diethe, Tom, Borchert, Tom, Thereska, Eno, Pigem, Borja de Balle and Lawrence, Neil* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2074-L2081) 
+Caiming Xiong* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2031-L2049) 
+- [**Incremental Learning through Deep Adaptation**](https://openreview.net/forum?id=ryj0790hb) , (2018) by *Amir Rosenfeld and John K. Tsotsos* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L584-L590) 
+- **Packnet: Adding multiple tasks to a single network by iterative pruning**, (2018) by *Mallya, Arun and Lazebnik, Svetlana* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L954-L961) 
+- **Piggyback: Adapting a single network to multiple tasks by learning to mask weights**, (2018) by *Mallya, Arun, Davis, Dillon and Lazebnik, Svetlana* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L963-L970) 
+- [**Continual Learning in Practice**](https://arxiv.org/abs/1903.05202) , (2018) by *Diethe, Tom, Borchert, Tom, Thereska, Eno, Pigem, Borja de Balle and Lawrence, Neil* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2152-L2159) 
 ``` Proposes a reference architecture for a continual learning system ``` 
-- **Growing a brain: Fine-tuning by increasing model capacity**, (2017) by *Wang, Yu-Xiong, Ramanan, Deva and Hebert, Martial* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L884-L891) 
+- **Growing a brain: Fine-tuning by increasing model capacity**, (2017) by *Wang, Yu-Xiong, Ramanan, Deva and Hebert, Martial* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L972-L979) 
 - [**PathNet: Evolution Channels Gradient Descent in Super Neural Networks**](http://arxiv.org/abs/1701.08734) , (2017) by *Chrisantha Fernando and
 Dylan Banarse and
 Charles Blundell and
@@ -224,58 +255,62 @@ Yori Zwols and
 David Ha and
 Andrei A. Rusu and
 Alexander Pritzel and
-Daan Wierstra* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1543-L1563) 
-- **Lifelong learning with dynamically expandable networks**, (2017) by *Yoon, Jaehong, Yang, Eunho, Lee, Jeongtae and Hwang, Sung Ju* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1813-L1819) 
+Daan Wierstra* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1621-L1641) 
+- **Lifelong learning with dynamically expandable networks**, (2017) by *Yoon, Jaehong, Yang, Eunho, Lee, Jeongtae and Hwang, Sung Ju* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1891-L1897) 
 - [**Progressive Neural Networks**](https://arxiv.org/abs/1606.04671) , (2016) by *Rusu, A.~A., Rabinowitz, N.~C., Desjardins, G. and
 Soyer, H., Kirkpatrick, J., Kavukcuoglu, K. and
-Pascanu, R. and Hadsell, R.* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L504-L519) 
+Pascanu, R. and Hadsell, R.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L592-L607) 
 ``` Each task have a specific model connected to the previous ones ``` 
 
 ## Hybrid Methods
-- [**Continual learning with hypernetworks**](https://openreview.net/forum?id=SJgwNerKvB) , (2020) by *Johannes von Oswald, Christian Henning, João Sacramento and Benjamin F. Grewe* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L748-L755) 
+- [**Continual learning with hypernetworks**](https://openreview.net/forum?id=SJgwNerKvB) , (2020) by *Johannes von Oswald, Christian Henning, João Sacramento and Benjamin F. Grewe* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L836-L843) 
 ``` Learning task-conditioned hypernetworks for continual learning as well as task embeddings; hypernetwors offers good model compression. ``` 
-- [**Compacting, Picking and Growing for Unforgetting Continual Learning**](https://arxiv.org/abs/1910.06562) , (2019) by *Hung, Ching-Yi, Tu, Cheng-Hao, Wu, Cheng-En, Chen, Chien-Hung, Chan, Yi-Ming and Chen, Chu-Song* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L278-L286) 
+- [**Compacting, Picking and Growing for Unforgetting Continual Learning**](https://arxiv.org/abs/1910.06562) , (2019) by *Hung, Ching-Yi, Tu, Cheng-Hao, Wu, Cheng-En, Chen, Chien-Hung, Chan, Yi-Ming and Chen, Chu-Song* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L365-L373) 
 ``` Approach leverages the principles of deep model compression, critical weights selection, and progressive networks expansion. All enforced in an iterative manner ``` 
-- [**A Neural Dirichlet Process Mixture Model for Task-Free Continual Learning**](https://arxiv.org/pdf/2001.00689.pdf) , (2019) by *Lee, Soochan, Ha, Junsoo, Zhang, Dongsu and Kim, Gunhee* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1293-L1300) 
+- [**A Neural Dirichlet Process Mixture Model for Task-Free Continual Learning**](https://arxiv.org/pdf/2001.00689.pdf) , (2019) by *Lee, Soochan, Ha, Junsoo, Zhang, Dongsu and Kim, Gunhee* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1371-L1378) 
 ``` This paper introduces expansion-based approach for task-free continual learning ``` 
 
 ## Continual Few-Shot Learning
-- [**Wandering Within a World: Online Contextualized Few-Shot Learning**](https://arxiv.org/abs/2007.04546) , (2020) by *Mengye Ren, Michael L. Iuzzolino, Michael C. Mozer and Richard S. Zemel* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L69-L77) 
+- **Learning where to learn: Gradient sparsity in meta and continual learning**, (2021) by *Von Oswald, Johannes, Zhao, Dominic, Kobayashi, Seijin, Schug, Simon, Caccia, Massimo, Zucchet, Nicolas and Sacramento, Jo{\~a}o* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L79-L86) 
+- [**Wandering Within a World: Online Contextualized Few-Shot Learning**](https://arxiv.org/abs/2007.04546) , (2020) by *Mengye Ren, Michael L. Iuzzolino, Michael C. Mozer and Richard S. Zemel* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L156-L164) 
 ``` proposes a new continual few-shot setting where spacial and temporal context can be leveraged to and unseen classes need to be predicted ``` 
-- [**Defining Benchmarks for Continual Few-Shot Learning**](https://arxiv.org/abs/2004.11967) , (2020) by *Antoniou, Antreas, Patacchiola, Massimiliano, Ochal, Mateusz and Storkey, Amos* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L111-L118) 
+- [**Defining Benchmarks for Continual Few-Shot Learning**](https://arxiv.org/abs/2004.11967) , (2020) by *Antoniou, Antreas, Patacchiola, Massimiliano, Ochal, Mateusz and Storkey, Amos* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L198-L205) 
 ``` (title is a good enough summary) ``` 
-- [**Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning**](https://arxiv.org/abs/2003.05856) , (2020) by *Caccia, Massimo, Rodriguez, Pau, Ostapenko, Oleksiy, Normandin, Fabrice, Lin, Min, Caccia, Lucas, Laradji, Issam, Rish, Irina, Lacoste, Alexandre, Vazquez, David and Charlin, Laurent* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1216-L1223) 
+- [**Online Fast Adaptation and Knowledge Accumulation: a New Approach to Continual Learning**](https://arxiv.org/abs/2003.05856) , (2020) by *Caccia, Massimo, Rodriguez, Pau, Ostapenko, Oleksiy, Normandin, Fabrice, Lin, Min, Caccia, Lucas, Laradji, Issam, Rish, Irina, Lacoste, Alexandre, Vazquez, David and Charlin, Laurent* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1304-L1311) 
 ``` Proposes a new approach to CL evaluation more aligned with real-life applications, bringing CL closer to Online Learning and Open-World learning ``` 
-- [**Learning from the Past: Continual Meta-Learning via Bayesian Graph Modeling**](https://arxiv.org/abs/1911.04695) , (2019) by *Yadan Luo, Zi Huang, Zheng Zhang, Ziwei Wang, Mahsa Baktashmotlagh and Yang Yang* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L619-L628) 
-- [**Online Meta-Learning**](http://proceedings.mlr.press/v97/finn19a.html) , (2019) by *Finn, Chelsea, Rajeswaran, Aravind, Kakade, Sham and Levine, Sergey* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L641-L656) 
+- [**Learning from the Past: Continual Meta-Learning via Bayesian Graph Modeling**](https://arxiv.org/abs/1911.04695) , (2019) by *Yadan Luo, Zi Huang, Zheng Zhang, Ziwei Wang, Mahsa Baktashmotlagh and Yang Yang* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L707-L716) 
+- [**Online Meta-Learning**](http://proceedings.mlr.press/v97/finn19a.html) , (2019) by *Finn, Chelsea, Rajeswaran, Aravind, Kakade, Sham and Levine, Sergey* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L729-L744) 
 ``` defines Online Meta-learning; propsoses Follow the Meta Leader (FTML) (~ Online MAML) ``` 
-- [**Reconciling meta-learning and continual learning with online mixtures of tasks**](http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-learning-with-online-mixtures-of-tasks.pdf) , (2019) by *Jerfel, Ghassen, Grant, Erin, Griffiths, Tom and Heller, Katherine A* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L660-L670) 
+- [**Reconciling meta-learning and continual learning with online mixtures of tasks**](http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-learning-with-online-mixtures-of-tasks.pdf) , (2019) by *Jerfel, Ghassen, Grant, Erin, Griffiths, Tom and Heller, Katherine A* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L748-L758) 
 ``` Meta-learns a tasks structure; continual adaptation via non-parametric prior ``` 
-- [**Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based RL**](https://openreview.net/forum?id=HyxAfnA5tm) , (2019) by *Anusha Nagabandi, Chelsea Finn and Sergey Levine* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L675-L682) 
+- [**Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based RL**](https://openreview.net/forum?id=HyxAfnA5tm) , (2019) by *Anusha Nagabandi, Chelsea Finn and Sergey Levine* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L763-L770) 
 ``` Formulates an online learning procedure that uses SGD to update model parameters, and an EM with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distribution ``` 
-- [**Task Agnostic Continual Learning via Meta Learning**](https://arxiv.org/abs/1906.05201) , (2019) by *Xu He, Jakub Sygnowski, Alexandre Galashov, Andrei A. Rusu, Yee Whye Teh and Razvan Pascanu* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L771-L779) 
+- [**Task Agnostic Continual Learning via Meta Learning**](https://arxiv.org/abs/1906.05201) , (2019) by *Xu He, Jakub Sygnowski, Alexandre Galashov, Andrei A. Rusu, Yee Whye Teh and Razvan Pascanu* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L859-L867) 
 ``` Introduces What \& How framework; enables Task Agnostic CL with meta learned task inference ``` 
 
 ## Meta-Continual Learning
-- [**La-MAML: Look-ahead Meta Learning for Continual Learning**](https://arxiv.org/abs/2007.13904) , (2020) by *Gunshi Gupta, Karmesh Yadav and Liam Paull* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L60-L66) 
+- **Learning where to learn: Gradient sparsity in meta and continual learning**, (2021) by *Von Oswald, Johannes, Zhao, Dominic, Kobayashi, Seijin, Schug, Simon, Caccia, Massimo, Zucchet, Nicolas and Sacramento, Jo{\~a}o* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L79-L86) 
+- [**La-MAML: Look-ahead Meta Learning for Continual Learning**](https://arxiv.org/abs/2007.13904) , (2020) by *Gunshi Gupta, Karmesh Yadav and Liam Paull* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L147-L153) 
 ``` Proposes an online replay-based meta-continual learning algorithm with learning-rate modulation to mitigate catastrophic forgetting ``` 
-- [**Learning to Continually Learn**](https://arxiv.org/abs/2002.09571) , (2020) by *Beaulieu, Shawn, Frati, Lapo, Miconi, Thomas, Lehman, Joel, Stanley, Kenneth O, Clune, Jeff and Cheney, Nick* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1174-L1181) 
+- [**Learning to Continually Learn**](https://arxiv.org/abs/2002.09571) , (2020) by *Beaulieu, Shawn, Frati, Lapo, Miconi, Thomas, Lehman, Joel, Stanley, Kenneth O, Clune, Jeff and Cheney, Nick* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1262-L1269) 
 ``` Follow-up of OML. Meta-learns an activation-gating function instead. ``` 
-- [**Meta-Learning Representations for Continual Learning**](http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning.pdf) , (2019) by *Javed, Khurram and White, Martha* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L606-L616) 
+- [**Meta-Learning Representations for Continual Learning**](http://papers.nips.cc/paper/8458-meta-learning-representations-for-continual-learning.pdf) , (2019) by *Javed, Khurram and White, Martha* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L694-L704) 
 ``` Introduces Learns how to continually learn (OML) i.e. learns how to do online updates without forgetting. ``` 
-- [**Meta-learnt priors slow down catastrophic forgetting in neural networks**](https://arxiv.org/pdf/1909.04170.pdf) , (2019) by *Spigler, Giacomo* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1184-L1191) 
+- [**Meta-learnt priors slow down catastrophic forgetting in neural networks**](https://arxiv.org/pdf/1909.04170.pdf) , (2019) by *Spigler, Giacomo* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1272-L1279) 
 ``` Learning MAML in a Meta continual learning way slows down forgetting ``` 
-- [**Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference**](https://openreview.net/forum?id=B1gTShAct7) , (2019) by *Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and and Gerald Tesauro* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1195-L1202) 
+- [**Learning to Learn without Forgetting By Maximizing Transfer and Minimizing Interference**](https://openreview.net/forum?id=B1gTShAct7) , (2019) by *Matthew Riemer, Ignacio Cases, Robert Ajemian, Miao Liu, Irina Rish, Yuhai Tu and and Gerald Tesauro* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1283-L1290) 
 
 ## Lifelong Reinforcement Learning
-- [**Reset-Free Lifelong Learning with Skill-Space Planning**](https://openreview.net/forum?id=HIGSa_3kOx3) , (2021) by *Kevin Lu, Aditya Grover, Pieter Abbeel and Igor Mordatch* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2480-L2487) 
-- **Towards Continual Reinforcement Learning: A Review and Perspectives**, (2020) by *Khimya Khetarpal, Matthew Riemer, Irina Rish and Doina Precup* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L37-L45) 
+- [**Modular Lifelong Reinforcement Learning via Neural Composition**](https://openreview.net/forum?id=5XmLzdslFNN) , (2022) by *Jorge A Mendez, Harm van Seijen and ERIC EATON* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2-L9) 
+- [**Reset-Free Lifelong Learning with Skill-Space Planning**](https://openreview.net/forum?id=HIGSa_3kOx3) , (2021) by *Kevin Lu, Aditya Grover, Pieter Abbeel and Igor Mordatch* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2559-L2566) 
+- [**Lifelong Policy Gradient Learning of Factored Policies for Faster Training Without Forgetting**](https://arxiv.org/abs/2007.07011) , (2020) by *Jorge A. Mendez, Boyu Wang and Eric Eaton* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L22-L32) 
+- **Towards Continual Reinforcement Learning: A Review and Perspectives**, (2020) by *Khimya Khetarpal, Matthew Riemer, Irina Rish and Doina Precup* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L124-L132) 
 ``` A review on continual reinforcement learning ``` 
-- [**Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges**](http://www.sciencedirect.com/science/article/pii/S1566253519307377) , (2020) by *Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodríguez* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1064-L1075) 
-- [**Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based RL**](https://openreview.net/forum?id=HyxAfnA5tm) , (2019) by *Anusha Nagabandi, Chelsea Finn and Sergey Levine* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L675-L682) 
+- [**Continual learning for robotics: Definition, framework, learning strategies, opportunities and challenges**](http://www.sciencedirect.com/science/article/pii/S1566253519307377) , (2020) by *Timothée Lesort, Vincenzo Lomonaco, Andrei Stoian, Davide Maltoni, David Filliat and Natalia Díaz-Rodríguez* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1152-L1163) 
+- [**Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based RL**](https://openreview.net/forum?id=HyxAfnA5tm) , (2019) by *Anusha Nagabandi, Chelsea Finn and Sergey Levine* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L763-L770) 
 ``` Formulates an online learning procedure that uses SGD to update model parameters, and an EM with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distribution ``` 
-- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L996-L1002) 
-- [**Experience replay for continual learning**](https://arxiv.org/abs/1811.11682) , (2019) by *Rolnick, David, Ahuja, Arun, Schwarz, Jonathan, Lillicrap, Timothy and Wayne, Gregory* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1204-L1212) 
+- **Continual Reinforcement Learning deployed in Real-life using PolicyDistillation and Sim2Real Transfer**, (2019) by *Kalifou, René Traoré, Caselles-Dupré, Hugo, Lesort, Timothée, Sun, Te, Diaz-Rodriguez, Natalia and Filliat, David * [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1084-L1090) 
+- [**Experience replay for continual learning**](https://arxiv.org/abs/1811.11682) , (2019) by *Rolnick, David, Ahuja, Arun, Schwarz, Jonathan, Lillicrap, Timothy and Wayne, Gregory* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1292-L1300) 
 - [**PathNet: Evolution Channels Gradient Descent in Super Neural Networks**](http://arxiv.org/abs/1701.08734) , (2017) by *Chrisantha Fernando and
 Dylan Banarse and
 Charles Blundell and
@@ -283,53 +318,58 @@ Yori Zwols and
 David Ha and
 Andrei A. Rusu and
 Alexander Pritzel and
-Daan Wierstra* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1543-L1563) 
+Daan Wierstra* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1621-L1641) 
+- **Incremental robot learning of new objects with fixed update time**, (2017) by *R. {Camoriano}, G. {Pasquale}, C. {Ciliberto}, L. {Natale}, L. {Rosasco} and G. {Metta}* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1759-L1771) 
+
+## Task-Agnostic Lifelong Reinforcement Learning
+- [**Deep Online Learning Via Meta-Learning: Continual Adaptation for Model-Based RL**](https://openreview.net/forum?id=HyxAfnA5tm) , (2019) by *Anusha Nagabandi, Chelsea Finn and Sergey Levine* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L763-L770) 
+``` Formulates an online learning procedure that uses SGD to update model parameters, and an EM with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distribution ``` 
 
 ## Continual Generative Modeling
-- [**Continual Unsupervised Representation Learning**](https://arxiv.org/pdf/1910.14481.pdf) , (2019) by *Dushyant Rao, Francesco Visin, Andrei A. Rusu, Yee Whye Teh, Razvan Pascanu and Raia Hadsell* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L685-L694) 
+- [**Continual Unsupervised Representation Learning**](https://arxiv.org/pdf/1910.14481.pdf) , (2019) by *Dushyant Rao, Francesco Visin, Andrei A. Rusu, Yee Whye Teh, Razvan Pascanu and Raia Hadsell* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L773-L782) 
 ``` Introduces unsupervised continual learning (no task label and no task boundaries) ``` 
-- [**Generative Models from the perspective of Continual Learning**](https://hal.archives-ouvertes.fr/hal-01951954) , (2019) by *Lesort, Timothée, Caselles-Dupré, Hugo, Garcia-Ortiz, Michael, Goudou, Jean-Fran{\c c}ois and Filliat, David* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L697-L709) 
+- [**Generative Models from the perspective of Continual Learning**](https://hal.archives-ouvertes.fr/hal-01951954) , (2019) by *Lesort, Timothée, Caselles-Dupré, Hugo, Garcia-Ortiz, Michael, Goudou, Jean-Fran{\c c}ois and Filliat, David* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L785-L797) 
 ``` Extensive evaluation of CL methods for generative modeling ``` 
-- [**Closed-loop Memory GAN for Continual Learning**](http://dl.acm.org/citation.cfm?id=3367471.3367504) , (2019) by *Rios, Amanda and Itti, Laurent* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1004-L1018) 
-- [**Lifelong Generative Modeling**](https://arxiv.org/abs/1705.09847) , (2017) by *Ramapuram, Jason, Gregorova, Magda and Kalousis, Alexandros* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L712-L719) 
+- [**Closed-loop Memory GAN for Continual Learning**](http://dl.acm.org/citation.cfm?id=3367471.3367504) , (2019) by *Rios, Amanda and Itti, Laurent* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1092-L1106) 
+- [**Lifelong Generative Modeling**](https://arxiv.org/abs/1705.09847) , (2017) by *Ramapuram, Jason, Gregorova, Magda and Kalousis, Alexandros* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L800-L807) 
 
 ## Applications
-- [**CLOPS: Continual Learning of Physiological Signals**](https://arxiv.org/abs/2004.09578) , (2020) by *Kiyasseh, Dani, Zhu, Tingting and Clifton, David A* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L148-L155) 
+- [**CLOPS: Continual Learning of Physiological Signals**](https://arxiv.org/abs/2004.09578) , (2020) by *Kiyasseh, Dani, Zhu, Tingting and Clifton, David A* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L235-L242) 
 ``` a healthcare-specific replay-based method to mitigate destructive interference during continual learning ``` 
-- [**LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning**](https://openreview.net/forum?id=Skgxcn4YDS) , (2020) by *Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1275-L1282) 
-- [**Compositional Language Continual Learning**](https://openreview.net/forum?id=rklnDgHtDS) , (2020) by *Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1304-L1311) 
+- [**LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning**](https://openreview.net/forum?id=Skgxcn4YDS) , (2020) by *Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1353-L1360) 
+- [**Compositional Language Continual Learning**](https://openreview.net/forum?id=rklnDgHtDS) , (2020) by *Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1382-L1389) 
 ``` method for compositional continual learning of sequence-to-sequence models ``` 
-- [**Unsupervised real-time anomaly detection for streaming data**](https://www.sciencedirect.com/science/article/pii/S0925231217309864) , (2017) by *Ahmad, Subutai, Lavin, Alexander, Purdy, Scott and Agha, Zuha* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L121-L131) 
+- [**Unsupervised real-time anomaly detection for streaming data**](https://www.sciencedirect.com/science/article/pii/S0925231217309864) , (2017) by *Ahmad, Subutai, Lavin, Alexander, Purdy, Scott and Agha, Zuha* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L208-L218) 
 ``` HTM applied to real-world anomaly detection problem ``` 
-- [**Continuous online sequence learning with an unsupervised neural network model**](https://arxiv.org/abs/1512.05463) , (2016) by *Cui, Yuwei, Ahmad, Subutai and Hawkins, Jeff* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L134-L145) 
+- [**Continuous online sequence learning with an unsupervised neural network model**](https://arxiv.org/abs/1512.05463) , (2016) by *Cui, Yuwei, Ahmad, Subutai and Hawkins, Jeff* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L221-L232) 
 ``` HTM applied to a prediction problem of taxi passenger demand ``` 
 
 ## Thesis
-- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L81-L90) 
-- [**Continual Learning with Deep Architectures**](http://amsdottorato.unibo.it/9073/1/vincenzo_lomonaco_thesis.pdf) , (2019) by *Vincenzo Lomonaco* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1441-L1447) 
-- [**Continual Learning in Neural Networks**](https://arxiv.org/abs/1910.02718) , (2019) by *Aljundi, Rahaf* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1907-L1914) 
-- [**Continual learning in reinforcement environments**](https://www.cs.utexas.edu/~ring/Ring-dissertation.pdf) , (1994) by *Ring, Mark Bishop* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1509-L1516) 
+- [**Continual Learning: Tackling Catastrophic Forgetting in Deep Neural Networks with Replay Processes**](https://arxiv.org/abs/2007.00487) , (2020) by *Timothée Lesort* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L168-L177) 
+- [**Continual Learning with Deep Architectures**](http://amsdottorato.unibo.it/9073/1/vincenzo_lomonaco_thesis.pdf) , (2019) by *Vincenzo Lomonaco* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1519-L1525) 
+- [**Continual Learning in Neural Networks**](https://arxiv.org/abs/1910.02718) , (2019) by *Aljundi, Rahaf* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1985-L1992) 
+- [**Continual learning in reinforcement environments**](https://www.cs.utexas.edu/~ring/Ring-dissertation.pdf) , (1994) by *Ring, Mark Bishop* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1587-L1594) 
 
 ## Libraries
-- [**Sequoia - Towards a Systematic Organization of Continual Learning Research**](https://github.com/lebrice/Sequoia) , (2021) by *Fabrice Normandin, Florian  Golemo,  Oleksiy Ostapenko,  Matthew Riemer,  Pau Rodriguez,  Julio Hurtado,  Khimya Khetarpal, Timothée Lesort,  Laurent Charlin, Irina Rish and Massimo Caccia* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2704-L2713) 
+- [**Sequoia - Towards a Systematic Organization of Continual Learning Research**](https://github.com/lebrice/Sequoia) , (2021) by *Fabrice Normandin, Florian  Golemo,  Oleksiy Ostapenko,  Matthew Riemer,  Pau Rodriguez,  Julio Hurtado,  Khimya Khetarpal, Timothée Lesort,  Laurent Charlin, Irina Rish and Massimo Caccia* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2783-L2792) 
 ``` A library that unifies Continual Supervised and Continual Reinforcement Learning research ``` 
-- [**Avalanche: an End-to-End Library for Continual Learning**](https://avalanche.continualai.org/) , (2021) by *Vincenzo Lomonaco, Lorenzo Pellegrini, Andrea Cossu, Gabriele Graffieti and Antonio Carta* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2726-L2734) 
+- [**Avalanche: an End-to-End Library for Continual Learning**](https://avalanche.continualai.org/) , (2021) by *Vincenzo Lomonaco, Lorenzo Pellegrini, Andrea Cossu, Gabriele Graffieti and Antonio Carta* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2805-L2813) 
 ``` A library for Continual Supervised Learning ``` 
-- [**Continuous Coordination As a Realistic Scenario for Lifelong Learning**](https://github.com/chandar-lab/Lifelong-Hanabi) , (2021) by *Hadi Nekoei, Akilesh Badrinaaraayanan, Aaron Courville and Sarath Chandar* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2737-L2746) 
+- [**Continuous Coordination As a Realistic Scenario for Lifelong Learning**](https://github.com/chandar-lab/Lifelong-Hanabi) , (2021) by *Hadi Nekoei, Akilesh Badrinaaraayanan, Aaron Courville and Sarath Chandar* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2816-L2825) 
 ``` a multi-agent lifelong learning testbed that supports both zero-shot and few-shot settings. ``` 
 - **River: machine learning for streaming data in Python**, (2020) by *Jacob Montiel, Max Halford, Saulo Martiello Mastelini
 and Geoffrey Bolmier, Raphael Sourty, Robin Vaysse
 and Adil Zouitine, Heitor Murilo Gomes, Jesse Read
-and Talel Abdessalem and Albert Bifet* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2352-L2363) 
+and Talel Abdessalem and Albert Bifet* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2431-L2442) 
 ``` A library for online learning. ``` 
-- **Continuum, Data Loaders for Continual Learning**, (2020) by *Douillard, Arthur and Lesort, Timothée* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2366-L2374) 
+- **Continuum, Data Loaders for Continual Learning**, (2020) by *Douillard, Arthur and Lesort, Timothée* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2445-L2453) 
 ``` A library proposing continual learning scenarios and metrics. ``` 
-- [**Framework for Analysis of Class-Incremental Learning**](https://github.com/mmasana/FACIL) , (2020) by *Masana, Marc, Liu, Xialei, Twardowski, Bartlomiej, Menta, Mikel, Bagdanov, Andrew D and van de Weijer, Joost* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2716-L2723) 
+- [**Framework for Analysis of Class-Incremental Learning**](https://github.com/mmasana/FACIL) , (2020) by *Masana, Marc, Liu, Xialei, Twardowski, Bartlomiej, Menta, Mikel, Bagdanov, Andrew D and van de Weijer, Joost* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2795-L2802) 
 ``` A library for Continual Class-Incremental Learning ``` 
 
 ## Workshops
-- [**Workshop on Continual Learning at ICML 2020**](https://sites.google.com/view/cl-icml/organizers?authuser=0) , (2020) by *Rahaf Aljundi, Haytham Fayek, Eugene Belilovsky, David Lopez-Paz, Arslan Chaudhry, Marc Pickett, Puneet Dokania, Jonathan Schwarz and Sayna Ebrahimi* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L92-L99) 
-- [**4th Lifelong Machine Learning Workshop at ICML 2020**](https://openreview.net/group?id=ICML.cc/2020/Workshop/LifelongML#accept) , (2020) by *Shagun Sodhani, Sarath Chandar, Balaraman Ravindran and Doina Precup* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L102-L109) 
-- **CVPR 2020 Continual Learning in Computer Vision Competition: Approaches, Results, Current Challenges and Future Directions**, (2020) by *Lomonaco, Vincenzo, Pellegrini, Lorenzo, Rodriguez, Pau, Caccia, Massimo, She, Qi, Chen, Yu, Jodelet, Quentin, Wang, Ruiping, Mai, Zheda, Vazquez, David and others* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L1315-L1321) 
+- [**Workshop on Continual Learning at ICML 2020**](https://sites.google.com/view/cl-icml/organizers?authuser=0) , (2020) by *Rahaf Aljundi, Haytham Fayek, Eugene Belilovsky, David Lopez-Paz, Arslan Chaudhry, Marc Pickett, Puneet Dokania, Jonathan Schwarz and Sayna Ebrahimi* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L179-L186) 
+- [**4th Lifelong Machine Learning Workshop at ICML 2020**](https://openreview.net/group?id=ICML.cc/2020/Workshop/LifelongML#accept) , (2020) by *Shagun Sodhani, Sarath Chandar, Balaraman Ravindran and Doina Precup* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L189-L196) 
+- **CVPR 2020 Continual Learning in Computer Vision Competition: Approaches, Results, Current Challenges and Future Directions**, (2020) by *Lomonaco, Vincenzo, Pellegrini, Lorenzo, Rodriguez, Pau, Caccia, Massimo, She, Qi, Chen, Yu, Jodelet, Quentin, Wang, Ruiping, Mai, Zheda, Vazquez, David and others* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1393-L1399) 
 ``` surveys the results of the first CL competition at CVPR ``` 
-- [**1st Lifelong Learning for Machine Translation Shared Task at WMT20 (EMNLP 2020)**](http://www.statmt.org/wmt20/lifelong-learning-task.html) , (2020) by *Loïc Barrault, Magdalena Biesialska, Marta R. Costa-jussà, Fethi Bougares and  Olivier Galibert* [[bib]](/home/ubuntu/Code/continual_learning_papers/bibtex.bib#L2542-L2544) 
+- [**1st Lifelong Learning for Machine Translation Shared Task at WMT20 (EMNLP 2020)**](http://www.statmt.org/wmt20/lifelong-learning-task.html) , (2020) by *Loïc Barrault, Magdalena Biesialska, Marta R. Costa-jussà, Fethi Bougares and  Olivier Galibert* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L2621-L2623) 

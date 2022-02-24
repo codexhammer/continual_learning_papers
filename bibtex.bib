@@ -1,10 +1,80 @@
+@inproceedings{
+mendez2022modular,
+title={Modular Lifelong Reinforcement Learning via Neural Composition},
+author={Jorge A Mendez and Harm van Seijen and ERIC EATON},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=5XmLzdslFNN}
+keywords={CRL, modular}
+}
+
+@misc{berseth2021comps,
+      title={CoMPS: Continual Meta Policy Search}, 
+      author={Glen Berseth and Zhiwei Zhang and Grace Zhang and Chelsea Finn and Sergey Levine},
+      year={2021},
+      eprint={2112.04467},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2112.04467}
+      keywords={CRL, TACRL}
+}
+
+@article{mendez2020lifelong,
+      title={Lifelong Policy Gradient Learning of Factored Policies for Faster Training Without Forgetting}, 
+      author={Jorge A. Mendez and Boyu Wang and Eric Eaton},
+      year={2020},
+      eprint={2007.07011},
+      archivePrefix={arXiv},
+      journal={NeurIPS 2020},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2007.07011},
+      keywords={CRL}
+}
+
+@inproceedings{
+mendez2022modular,
+title={Modular Lifelong Reinforcement Learning via Neural Composition},
+author={Jorge A Mendez and Harm van Seijen and ERIC EATON},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=5XmLzdslFNN},
+keywords={CRL}
+}
+
+@INPROCEEDINGS{8569992,
+  author={Pierre, John M.},
+  booktitle={2018 21st International Conference on Intelligent Transportation Systems (ITSC)}, 
+  title={Incremental Lifelong Deep Learning for Autonomous Vehicles}, 
+  year={2018},
+  volume={},
+  number={},
+  pages={3949-3954},
+  doi={10.1109/ITSC.2018.8569992},
+  keywords={Applications}
+  url={https://ieeexplore.ieee.org/document/8569992},
+}
+
+
+@misc{kirichenko2021taskagnostic,
+      title={Task-agnostic Continual Learning with Hybrid Probabilistic Models}, 
+      author={Polina Kirichenko and Mehrdad Farajtabar and Dushyant Rao and Balaji Lakshminarayanan and Nir Levine and Ang Li and Huiyi Hu and Andrew Gordon Wilson and Razvan Pascanu},
+      year={2021},
+      eprint={2106.12772},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2106.12772}
+      keywords={TACL}
+}
+
 @article{javed2020learning,
   title={Learning causal models online},
   author={Javed, Khurram and White, Martha and Bengio, Yoshua},
   journal={arXiv preprint arXiv:2006.07461},
   year={2020},
   url={https://arxiv.org/abs/2006.07461}
+  keywords={Misc}
 }
+
 
 @article{von2021learning,
   title={Learning where to learn: Gradient sparsity in meta and continual learning},
@@ -12,7 +82,7 @@
   journal={Advances in Neural Information Processing Systems},
   volume={34},
   year={2021},
-  keywords={Meta-Continual Learning, Continual-Meta Learning}
+  keywords={Meta-Continual Learning, Continual-Meta Learning, TACL}
 }
 
 @inproceedings{buzzega2021rethinking,
@@ -219,7 +289,7 @@ url={https://papers.nips.cc/paper/2020/file/b704ea2c39778f07c617f6b7ce480e9e-Pap
   journal={Proc. of the national academy of sciences},
   year={2017},
   publisher={National Acad Sciences},
-    keywords={Regularization, Influential},
+    keywords={Regularization, Influential, General},
     url={https://www.pnas.org/content/pnas/114/13/3521.full.pdf},
 }
 @String(Kirkpatrick17="Introduces prior-focused methods (Elastic Weight Consolidation)")
@@ -320,7 +390,8 @@ title={Uncertainty-guided Continual Learning with Bayesian Neural Networks},
 author={Sayna Ebrahimi and Mohamed Elhoseiny and Trevor Darrell and Marcus Rohrbach},
 booktitle={International Conference on Learning Representations},
 year={2020},
-url={https://openreview.net/forum?id=HklUCCVKDB}
+url={https://openreview.net/forum?id=HklUCCVKDB},
+keywords={TACL}
 }
 @String(Ebrahimi2020Uncertainty-guided="Uses Bayes by Backprop for variational Continual Learning.")
 
@@ -344,10 +415,10 @@ url={http://papers.nips.cc/paper/8690-uncertainty-based-continual-learning-with-
     eprint={1803.10123},
     archivePrefix={arXiv},
     primaryClass={stat.ML},
-    keywords={Regularization},
+    keywords={Regularization, TACL},
     url={https://arxiv.org/pdf/1803.10123.pdf}
 }
-@String(zeno2018task="Introduces an optimizer for CL that relies on closed form updates of mu and sigma of BNN; introduce label trick for class learning (single-head)")
+@String(zeno2018task="Introduces an optimizer for CL that relies on closed form updates of mu and sigma of BNN; introduce label trick for class learning (single-head) but warning: it isn't really task-agnostic")
 
 @article{DBLP:journals/corr/abs-1902-09432,
   author   ={Jaehong Yoon and
@@ -695,7 +766,7 @@ url={http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-le
         booktitle={International Conference on Learning Representations},
         year={2019},
         url={https://openreview.net/forum?id=HyxAfnA5tm},
-        keywords={Continual-Meta Learning, Lifelong Reinforcement Learning}
+        keywords={Lifelong Reinforcement Learning, TACRL, Continual-Meta }
 }
 @String(nagabandi2018deep="Formulates an online learning procedure that uses SGD to update model parameters, and an EM with a Chinese restaurant process prior to develop and maintain a mixture of models to handle non-stationary task distribution")
 
@@ -706,7 +777,7 @@ url={http://papers.nips.cc/paper/9112-reconciling-meta-learning-and-continual-le
     eprint={1910.14481},
     archivePrefix={arXiv},
     primaryClass={cs.LG},
-    keywords={Generative Modeling},
+    keywords={Generative Modeling, TACL},
     url={https://arxiv.org/pdf/1910.14481.pdf}
 }
 @String(rao2019continual="Introduces unsupervised continual learning (no task label and no task boundaries)")
@@ -1236,7 +1307,7 @@ keywords={Meta-Continual Learning}
   journal={NeurIPS},
   year={2020},
   url={https://arxiv.org/abs/2003.05856},
-  keywords={Continual-Meta Learning, Setting}
+  keywords={Continual-Meta Learning, Setting, TACL}
 }
 @String(caccia2020online="Proposes a new approach to CL evaluation more aligned with real-life applications, bringing CL closer to Online Learning and Open-World learning")
 
@@ -1257,16 +1328,6 @@ author={Tameem Adel and Han Zhao and Richard E. Turner},
 booktitle={International Conference on Learning Representations},
 year={2020},
 url={https://openreview.net/forum?id=Hklso24Kwr}
-}
-
-
-@inproceedings{
-Lee2020A,
-title={A Neural Dirichlet Process Mixture Model for Task-Free Continual Learning},
-author={Soochan Lee and Junsoo Ha and Dongsu Zhang and Gunhee Kim},
-booktitle={International Conference on Learning Representations},
-year={2020},
-url={https://openreview.net/forum?id=SJxSOJStPr}
 }
 
 
@@ -1313,7 +1374,7 @@ url={https://openreview.net/forum?id=BkepbpNFwr}
   booktitle={International Conference on Learning Representations},
   year={2019},
   url={https://arxiv.org/pdf/2001.00689.pdf},
-  keywords={"Hybrid"}
+  keywords={"Hybrid", "TACL"}
 }
 @String(lee2019neural="This paper introduces expansion-based approach for task-free continual learning")
 
@@ -1576,7 +1637,7 @@ keywords={Thesis}
   timestamp = {Wed, 07 Jun 2017 14:42:32 +0200},
   biburl    = {http://dblp.org/rec/bib/journals/corr/FernandoBBZHRPW17},
   bibsource = {dblp computer science bibliography, http://dblp.org},
-  keywords={"Reinforcement", "Dynamic Architecture"}
+  keywords={"Reinforcement", "Dynamic Architecture", "General"}
 }
 
 @article{shmelkov2017incremental,
@@ -2177,7 +2238,8 @@ year = {2020}
   author={Rajasegaran, Jathushan and Khan, Salman and Hayat, Munawar and Khan, Fahad Shahbaz and Shah, Mubarak},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   pages={13588--13597},
-  year={2020}
+  year={2020},
+  keywords={TACL}
 }
 
 @inproceedings{wang2007background,
@@ -2437,7 +2499,7 @@ author={Tom Veniat and Ludovic Denoyer and MarcAurelio Ranzato},
 booktitle={International Conference on Learning Representations},
 year={2021},
 url={https://openreview.net/forum?id=EKV158tSfwv},
-keywords={}
+keywords={Modular}
 }
 
 @inproceedings{loo2021generalized,
@@ -2726,7 +2788,7 @@ archivePrefix = {arXiv},
   howpublished={\url{https://github.com/lebrice/Sequoia}},
   url={https://github.com/lebrice/Sequoia},
   year={2021},
-  keywords={Library, Framework}
+  keywords={Library, Framework, Setting}
 }
 @String(normandin2021sequoia="A library that unifies Continual Supervised and Continual Reinforcement Learning research")
 
@@ -2942,6 +3004,7 @@ archivePrefix = {arXiv},
   booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
   year={2021},
   url={https://proceedings.neurips.cc/paper/2021/hash/fe5e7cb609bdbe6d62449d61849c38b0-Abstract.html}
+  keywords={modular}
 }
 
 @inproceedings{rostami2021lifelong,
