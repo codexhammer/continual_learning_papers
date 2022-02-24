@@ -339,6 +339,7 @@ Daan Wierstra* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L
 - [**LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning**](https://openreview.net/forum?id=Skgxcn4YDS) , (2020) by *Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1353-L1360) 
 - [**Compositional Language Continual Learning**](https://openreview.net/forum?id=rklnDgHtDS) , (2020) by *Yuanpeng Li, Liang Zhao, Kenneth Church and Mohamed Elhoseiny* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L1382-L1389) 
 ``` method for compositional continual learning of sequence-to-sequence models ``` 
+- [**Incremental Lifelong Deep Learning for Autonomous Vehicles**](https://ieeexplore.ieee.org/document/8569992) , (2018) by *Pierre, John M.* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L44-L55) 
 - [**Unsupervised real-time anomaly detection for streaming data**](https://www.sciencedirect.com/science/article/pii/S0925231217309864) , (2017) by *Ahmad, Subutai, Lavin, Alexander, Purdy, Scott and Agha, Zuha* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L208-L218) 
 ``` HTM applied to real-world anomaly detection problem ``` 
 - [**Continuous online sequence learning with an unsupervised neural network model**](https://arxiv.org/abs/1512.05463) , (2016) by *Cui, Yuwei, Ahmad, Subutai and Hawkins, Jeff* [[bib]](/Users/massimo/dev/continual_learning_papers/bibtex.bib#L221-L232) 
