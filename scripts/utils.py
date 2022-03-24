@@ -149,7 +149,7 @@ def get_md(DB, item, key, add_comments, frontpage=False):
     number_of_entries = len(DB.entries)
     for i in range(number_of_entries):
         if key in DB.entries[i].keys():
-            if (frontpage and "frontpage" in DB.entries[i]["keywords"]) or not frontpage:
+            if (frontpage and "frontpage" in DB.entries[i]["keywords"]) or (not frontpage):
                 if any(elem in DB.entries[i][key] for elem in item):
                     str_md = get_md_entry(DB, DB.entries[i], add_comments)
                     list_entry.update({str_md:DB.entries[i]['year']})
@@ -203,6 +203,7 @@ def generate_md_file(DB, list_classif, key, plot_title_fct, filename, add_commen
 
 
     for item in list_classif:
+
         local_filename = "Detailed_Pages/" + item[0] + ".md"
         local_page_str = ""
 
@@ -215,14 +216,18 @@ def generate_md_file(DB, list_classif, key, plot_title_fct, filename, add_commen
         if str != "":
             all_in_one_str += plot_title_fct(item)
             all_in_one_str += get_description(item)
-
-            local_page_str = all_in_one_str + local_str
             all_in_one_str += str
 
-        # write specific page
-        f = open(local_filename, "w")
-        f.write(local_page_str)
-        f.close()
+        if local_str != "":
+            local_page_str = ""
+            local_page_str += plot_title_fct(item)
+            local_page_str += get_description(item)
+            local_page_str += local_str
+
+            # write specific page
+            f = open(local_filename, "w")
+            f.write(local_page_str)
+            f.close()
 
     # write front page
     f = open(filename, "w")
