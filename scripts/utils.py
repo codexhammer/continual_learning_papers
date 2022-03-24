@@ -133,7 +133,7 @@ def get_md_entry(DB, entry, add_comments=True):
     return md_str
 
 
-def get_md(DB, item, key, add_comments):
+def get_md(DB, item, key, add_comments, frontpage=False):
     """
 
     :param DB: list of dictionary with bibtex
@@ -149,9 +149,10 @@ def get_md(DB, item, key, add_comments):
     number_of_entries = len(DB.entries)
     for i in range(number_of_entries):
         if key in DB.entries[i].keys():
-            if any(elem in DB.entries[i][key] for elem in item):
-                str_md = get_md_entry(DB, DB.entries[i], add_comments)
-                list_entry.update({str_md:DB.entries[i]['year']})
+            if (frontpage and "frontpage" in DB.entries[i]["keywords"]) or not frontpage:
+                if any(elem in DB.entries[i][key] for elem in item):
+                    str_md = get_md_entry(DB, DB.entries[i], add_comments)
+                    list_entry.update({str_md:DB.entries[i]['year']})
 
 
     sorted_tuple_list = sorted(list_entry.items(), reverse=True, key=lambda x: x[1])
@@ -181,6 +182,10 @@ def get_outline(list_classif, filename):
 
     return str_outline
 
+def get_description(item):
+    """""description of the section"""
+    #TODO
+    return ""
 
 def generate_md_file(DB, list_classif, key, plot_title_fct, filename, add_comments=True):
     """
@@ -196,14 +201,30 @@ def generate_md_file(DB, list_classif, key, plot_title_fct, filename, add_commen
     all_in_one_str = ""
     all_in_one_str += get_outline(list_classif, filename)
 
-    for item in list_classif:
 
-        str = get_md(DB, item, key, add_comments)
+    for item in list_classif:
+        local_filename = "Detailed_Pages/" + item[0] + ".md"
+        local_page_str = ""
+
+        # front page
+        str = get_md(DB, item, key, add_comments, frontpage=True)
+
+        #local page
+        local_str = get_md(DB, item, key, add_comments, frontpage=False)
 
         if str != "":
             all_in_one_str += plot_title_fct(item)
+            all_in_one_str += get_description(item)
+
+            local_page_str = all_in_one_str + local_str
             all_in_one_str += str
 
+        # write specific page
+        f = open(local_filename, "w")
+        f.write(local_page_str)
+        f.close()
+
+    # write front page
     f = open(filename, "w")
     f.write(all_in_one_str)
     f.close()
