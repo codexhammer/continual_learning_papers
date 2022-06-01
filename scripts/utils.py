@@ -21,7 +21,9 @@ conferences_list = [["ICLR", "International Conference on Learning Representatio
 journal_list = [["Information Fusion"],
                 ["Neural Networks"],
                 ["PNAS", "Proc. of the national academy of sciences", "national academy of sciences"],
-               ["arXiv", "Corr"]]
+                ["TPAMI", "Transactions on Pattern Analysis and Machine Intelligence"],
+                ["TMM", "Transactions on Multimedia"],
+                ["arXiv", "Corr"]]
 
 
 
