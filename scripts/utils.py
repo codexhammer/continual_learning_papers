@@ -23,6 +23,7 @@ journal_list = [["Information Fusion"],
                 ["PNAS", "Proc. of the national academy of sciences", "national academy of sciences"],
                 ["TPAMI", "Transactions on Pattern Analysis and Machine Intelligence"],
                 ["TMM", "Transactions on Multimedia"],
+                ["PRL", "Pattern Recognition Letters"],
                 ["arXiv", "Corr"]]
 
 
