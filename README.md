@@ -1,5 +1,5 @@
 # Continual Learning Literature 
-This repository is maintained by Massimo Caccia and Timothée Lesort don't hesitate to send us an email to collaborate or fix some entries ({massimo.p.caccia , t.lesort} at gmail.com). The automation script of this repo is adapted from [Automatic_Awesome_Bibliography](https://github.com/TLESORT/Automatic_Awesome_Bibliography).
+This repository is maintained by Massimo Caccia and Timoth�e Lesort don't hesitate to send us an email to collaborate or fix some entries ({massimo.p.caccia , t.lesort} at gmail.com). The automation script of this repo is adapted from [Automatic_Awesome_Bibliography](https://github.com/TLESORT/Automatic_Awesome_Bibliography).
 
  For contributing to the repository please follow the process [here](https://github.com/optimass/continual_learning_papers/blob/master/scripts/README.md) 
 
@@ -331,6 +331,8 @@ Pascanu, R. and Hadsell, R.* [[bib]](https://github.com/optimass/continual_learn
 - [**Task-Agnostic Continual Reinforcement Learning: In Praise of a Simple Baseline**](https://arxiv.org/abs/2205.14495) , (arXiv 2022) by *Caccia, Massimo, Mueller, Jonas, Kim, Taesup, Charlin, Laurent and Fakoor, Rasool* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L116-L123) 
 ``` combines replay and an RNN to set a simple baseline for TACRL: shows that the baselines matches and surpasses previously thought upper bounds ``` 
 - [**Modular Lifelong Reinforcement Learning via Neural Composition**](https://openreview.net/forum?id=5XmLzdslFNN) , (ICLR 2022) by *Jorge A Mendez, Harm van Seijen and ERIC EATON* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L160-L167) 
+- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3440-L3446) 
+``` Detects changes and explores when and where they happen to recover from non-stationarity. ``` 
 - [**Same State, Different Task: Continual Reinforcement Learning without Interference**](https://arxiv.org/abs/2106.02940) , (2021) by *Samuel Kessler, Jack Parker-Holder, Philip J. Ball, Stefan Zohren and Stephen J. Roberts* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L94-L102) 
 ``` learns multiple policies and cast policy-retrieval as a multi-arm bandit problem ``` 
 - [**CoMPS: Continual Meta Policy Search**](https://arxiv.org/abs/2112.04467) , (2021) by *Glen Berseth, Zhiwei Zhang, Grace Zhang, Chelsea Finn and Sergey Levine* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L169-L178) 
@@ -360,6 +362,8 @@ Daan Wierstra* [[bib]](https://github.com/optimass/continual_learning_papers/blo
 ``` Co{MPS} is a novel meta-policy search algorithm for task-agnostic continual RL ``` 
 - [**Task-Agnostic Continual Reinforcement Learning: In Praise of a Simple Baseline**](https://arxiv.org/abs/2205.14495) , (arXiv 2022) by *Caccia, Massimo, Mueller, Jonas, Kim, Taesup, Charlin, Laurent and Fakoor, Rasool* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L116-L123) 
 ``` combines replay and an RNN to set a simple baseline for TACRL: shows that the baselines matches and surpasses previously thought upper bounds ``` 
+- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3440-L3446) 
+``` Detects changes and explores when and where they happen to recover from non-stationarity. ``` 
 - [**Same State, Different Task: Continual Reinforcement Learning without Interference**](https://arxiv.org/abs/2106.02940) , (2021) by *Samuel Kessler, Jack Parker-Holder, Philip J. Ball, Stefan Zohren and Stephen J. Roberts* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L94-L102) 
 ``` learns multiple policies and cast policy-retrieval as a multi-arm bandit problem ``` 
 - [**CoMPS: Continual Meta Policy Search**](https://arxiv.org/abs/2112.04467) , (2021) by *Glen Berseth, Zhiwei Zhang, Grace Zhang, Chelsea Finn and Sergey Levine* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L169-L178) 
