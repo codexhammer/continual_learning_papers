@@ -40,7 +40,6 @@ This repository is maintained by Massimo Caccia and Timothée Lesort don't hesit
 ``` Introduces CL and reveals the catastrophic forgetting problem ``` 
 
 ## Empirical Study
-- [**Class-Incremental Continual Learning into the eXtended DER-verse**](https://arxiv.org/abs/2201.00766) , (TPAMI 2022) by *Boschini, Matteo, Bonicelli, Lorenzo, Buzzega, Pietro, Porrello, Angelo and Calderara, Simone* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L1-L10) 
 - [**Continual semi-supervised learning through contrastive interpolation consistency**](https://arxiv.org/abs/2108.06552) , (PRL 2022) by *Boschini, Matteo, Buzzega, Pietro, Bonicelli, Lorenzo, Porrello, Angelo and Calderara, Simone* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L24-L35) 
 - [**Transfer without Forgetting**](https://arxiv.org/abs/2206.00388) , (ECCV 2022) by *Boschini, Matteo, Bonicelli, Lorenzo, Porrello, Angelo, Bellitto, Giovanni, Pennisi, Matteo, Palazzo, Simone, Spampinato, Concetto and Calderara, Simone* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L37-L44) 
 - [**Effects of Auxiliary Knowledge on Continual Learning**](https://arxiv.org/abs/2206.02577) , (ICPR 2022) by *Bellitto, Giovanni, Pennisi, Matteo, Palazzo, Simone, Bonicelli, Lorenzo, Boschini, Matteo, Calderara, Simone and Spampinato, Concetto* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L149-L156) 
