@@ -332,7 +332,7 @@ Pascanu, R. and Hadsell, R.* [[bib]](https://github.com/optimass/continual_learn
 - [**Task-Agnostic Continual Reinforcement Learning: In Praise of a Simple Baseline**](https://arxiv.org/abs/2205.14495) , (arXiv 2022) by *Caccia, Massimo, Mueller, Jonas, Kim, Taesup, Charlin, Laurent and Fakoor, Rasool* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L136-L143) 
 ``` combines replay and an RNN to set a simple baseline for TACRL: shows that the baselines matches and surpasses previously thought upper bounds ``` 
 - [**Modular Lifelong Reinforcement Learning via Neural Composition**](https://openreview.net/forum?id=5XmLzdslFNN) , (ICLR 2022) by *Jorge A Mendez, Harm van Seijen and ERIC EATON* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L180-L187) 
-- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3460-L3466) 
+- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3460-L3467) 
 ``` Detects changes and explores when and where they happen to recover from non-stationarity. ``` 
 - [**Same State, Different Task: Continual Reinforcement Learning without Interference**](https://arxiv.org/abs/2106.02940) , (2021) by *Samuel Kessler, Jack Parker-Holder, Philip J. Ball, Stefan Zohren and Stephen J. Roberts* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L114-L122) 
 ``` learns multiple policies and cast policy-retrieval as a multi-arm bandit problem ``` 
@@ -363,7 +363,7 @@ Daan Wierstra* [[bib]](https://github.com/optimass/continual_learning_papers/blo
 ``` Co{MPS} is a novel meta-policy search algorithm for task-agnostic continual RL ``` 
 - [**Task-Agnostic Continual Reinforcement Learning: In Praise of a Simple Baseline**](https://arxiv.org/abs/2205.14495) , (arXiv 2022) by *Caccia, Massimo, Mueller, Jonas, Kim, Taesup, Charlin, Laurent and Fakoor, Rasool* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L136-L143) 
 ``` combines replay and an RNN to set a simple baseline for TACRL: shows that the baselines matches and surpasses previously thought upper bounds ``` 
-- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3460-L3466) 
+- [**Reactive Exploration to Cope with Non-Stationarity in Lifelong Reinforcement Learning**](https://arxiv.org/abs/2207.05742) , (2022) by *Steinparz, Christian, Schmied, Thomas, Paischer, Fabian, Dinu, Marius-Constantin, Patil, Vihang, Bitto-Nemling, Angela, Eghbal-zadeh, Hamid and Hochreiter, Sepp* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3460-L3467) 
 ``` Detects changes and explores when and where they happen to recover from non-stationarity. ``` 
 - [**Same State, Different Task: Continual Reinforcement Learning without Interference**](https://arxiv.org/abs/2106.02940) , (2021) by *Samuel Kessler, Jack Parker-Holder, Philip J. Ball, Stefan Zohren and Stephen J. Roberts* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L114-L122) 
 ``` learns multiple policies and cast policy-retrieval as a multi-arm bandit problem ``` 
@@ -392,6 +392,8 @@ Daan Wierstra* [[bib]](https://github.com/optimass/continual_learning_papers/blo
 - [**Learning causal models online**](https://arxiv.org/abs/2006.07461) , (arXiv 2020) by *Javed, Khurram, White, Martha and Bengio, Yoshua* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L237-L244) 
 
 ## Applications
+- [**On the Limitations of Continual Learning for Malware Classification**](https://arxiv.org/abs/2208.06568) , (2022) by *Rahman, Mohammad Saidur, Coull, Scott E and Wright, Matthew* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L21-L28) 
+``` This paper investigates overcoming catastrophic forgetting for malware classification ``` 
 - [**CLOPS: Continual Learning of Physiological Signals**](https://arxiv.org/abs/2004.09578) , (arXiv 2020) by *Kiyasseh, Dani, Zhu, Tingting and Clifton, David A* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L404-L411) 
 ``` a healthcare-specific replay-based method to mitigate destructive interference during continual learning ``` 
 - [**LAMAL: LAnguage Modeling Is All You Need for Lifelong Language Learning**](https://openreview.net/forum?id=Skgxcn4YDS) , (ICLR 2020) by *Fan-Keng Sun, Cheng-Hao Ho and Hung-Yi Lee* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L1522-L1529) 
@@ -410,6 +412,8 @@ Daan Wierstra* [[bib]](https://github.com/optimass/continual_learning_papers/blo
 - [**Continual learning in reinforcement environments**](https://www.cs.utexas.edu/~ring/Ring-dissertation.pdf) , (1994) by *Ring, Mark Bishop* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L1761-L1768) 
 
 ## Libraries
+- [**Renate: a library for real-world continual learning**](https://github.com/awslabs/renate) , (2022) by ** [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L3470-L3478) 
+``` A library for real-world continual learning with integrated hyperparameter tuning. ``` 
 - [**Sequoia - Towards a Systematic Organization of Continual Learning Research**](https://github.com/lebrice/Sequoia) , (2021) by *Fabrice Normandin, Florian  Golemo,  Oleksiy Ostapenko,  Matthew Riemer,  Pau Rodriguez,  Julio Hurtado,  Khimya Khetarpal, Timothée Lesort,  Laurent Charlin, Irina Rish and Massimo Caccia* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L2951-L2960) 
 ``` A library that unifies Continual Supervised and Continual Reinforcement Learning research ``` 
 - [**Avalanche: an End-to-End Library for Continual Learning**](https://avalanche.continualai.org/) , (2021) by *Vincenzo Lomonaco, Lorenzo Pellegrini, Andrea Cossu, Gabriele Graffieti and Antonio Carta* [[bib]](https://github.com/optimass/continual_learning_papers/blob/master/bibtex.bib#L2973-L2981) 
